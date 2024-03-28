@@ -23,12 +23,6 @@ plugins:
 
 nav:
   - Sobre: index.md
-  - Documentação:
-    - Planejamento: 
-      - Quadro de disponibilidade: planejamento\quadro_de_disponibilidade.md
-  - Relatorios:
-      - Semana 01:  
-        - Review: sprints/sprint0/sprint0_review.md
-        - Planning: sprints/sprint0/sprint0_planning.md
-
+  - Planejamento: 
+    - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
 
