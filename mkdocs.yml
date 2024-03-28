@@ -25,4 +25,5 @@ nav:
   - Sobre: index.md
   - Planejamento: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
+    - Quadro de conhecimento: 'planejamento/heatmap.md'
 
