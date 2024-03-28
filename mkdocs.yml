@@ -1,5 +1,4 @@
 site_name: 2024.1 - CALCULUS
-site_url: 'https://docs-CALCULUS.com/'
 
 repo_name: '2024.1 - CALCULUS'
 repo_url: 'https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC'
@@ -25,7 +24,8 @@ plugins:
 nav:
   - Sobre: index.md
   - Documentação:
-    - Planejamento: home.md
+    - Planejamento: 
+      - Quadro de disponibilidade: planejamento\quadro_de_disponibilidade.md
   - Relatorios:
       - Semana 01:  
         - Review: sprints/sprint0/sprint0_review.md
