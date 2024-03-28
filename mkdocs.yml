@@ -1,4 +1,34 @@
-site_name: My Docs
+site_name: 2024.1 - CALCULUS
+
+repo_name: '2024.1 - CALCULUS'
+repo_url: 'https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC'
 
 theme:
   name: material
+  palette:
+    primary: white
+    accent: black
+    background: black
+    text: white
+    code: white
+  font:
+    text: Roboto
+    code: Inconsolata
+  font_size:
+    text: 16px
+    code: 14px
+
+plugins:
+  - search
+
+nav:
+  - Sobre: index.md
+  - Documentação:
+    - Planejamento: 
+      - Quadro de disponibilidade: planejamento\quadro_de_disponibilidade.md
+  - Relatorios:
+      - Semana 01:  
+        - Review: sprints/sprint0/sprint0_review.md
+        - Planning: sprints/sprint0/sprint0_planning.md
+
+
