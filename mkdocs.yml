@@ -12,7 +12,7 @@ theme:
     text: white
     code: white
   font:
-    text: Roboto
+    text: Poppins
     code: Inconsolata
   font_size:
     text: 16px
@@ -20,6 +20,13 @@ theme:
 
 plugins:
   - search
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Sobre: index.md
