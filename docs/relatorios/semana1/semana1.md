@@ -34,4 +34,4 @@
     ## Histórico de versão
 | Data | Versão | Descrição | Autor(es) | Revisores |
 | ---- | ---- | ---- | ---- | ---- |
-| 21/10/2023 | 1.0 | Criação do Documento | Felipe Motta | Brenda Santos, Daniel Rodrigues |
+| 03/04/2024 | 1.0 | Criação do Documento | Davi Matheus |  |
