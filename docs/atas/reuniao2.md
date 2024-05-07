@@ -1,6 +1,3 @@
-# Reuniões da 2⁰ Semana
-
-
 # **Reunião com o PO - 01/04**
 
 
@@ -39,4 +36,4 @@
     ## Histórico de versão
 | Data | Versão | Descrição | Autor(es) | Revisores |
 | ---- | ---- | ---- | ---- | ---- |
-| 03/04/2024 | 1.0 | Criação do Documento | Davi Matheus |  |
+| 03/04/2024 | 1.0 | Criação do Documento | Davi Matheus | Natanael Filho |

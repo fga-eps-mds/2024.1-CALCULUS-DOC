@@ -1,6 +1,3 @@
-# Reunião da 1⁰ Semana
-
-
 # **Reunião com o PO - 25/03**
 
 ## Reunião de Kick-off com o cliente
@@ -34,4 +31,4 @@
     ## Histórico de versão
 | Data | Versão | Descrição | Autor(es) | Revisores |
 | ---- | ---- | ---- | ---- | ---- |
-| 03/04/2024 | 1.0 | Criação do Documento | Davi Matheus |  |
+| 03/04/2024 | 1.0 | Criação do Documento | Davi Matheus | Natanael |
