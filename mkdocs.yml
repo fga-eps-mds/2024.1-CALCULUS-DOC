@@ -12,7 +12,7 @@ theme:
     text: white
     code: white
   font:
-    text: Roboto
+    text: Poppins
     code: Inconsolata
   font_size:
     text: 16px
@@ -21,6 +21,13 @@ theme:
 plugins:
   - search
 
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
 nav:
   - Sobre: index.md
   - Planejamento: 
@@ -28,6 +35,7 @@ nav:
     - Quadro de conhecimento: 'planejamento/heatmap.md'
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
+    - Código de conduta: 'guias/codigo-conduta.md'
   - Atas de Reunião:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
     - Reunião 2 - 01/04: 'atas/reuniao2.md'
