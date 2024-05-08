@@ -29,7 +29,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
-  - Sobre: index.md
+  - Sobre: 'index.md'
   - Planejamento: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento: 'planejamento/heatmap.md'
@@ -40,4 +40,6 @@ nav:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
     - Reunião 2 - 01/04: 'atas/reuniao2.md'
     - Reunião 3 - 03/04: 'atas/reuniao3.md'
+  - Dojo:
+    - Dojo Markdown: 'dojo/dojo-markdown.md'
 
