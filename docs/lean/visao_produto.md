@@ -23,7 +23,7 @@ Durante essa etapa, a equipe trabalha em conjunto de forma colaborativa, seguind
 
 ## 2. Resultado
 
-![Visão do Produto](image.png)
+![Visão do Produto](visao_produto.png)
 
 ## 3. Referências
 
