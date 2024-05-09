@@ -40,4 +40,5 @@ nav:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
     - Reunião 2 - 01/04: 'atas/reuniao2.md'
     - Reunião 3 - 03/04: 'atas/reuniao3.md'
-
+  - Lean Inception:
+    - É - Não É - Faz - Não Faz: 'lean/faz_nao_faz.md'
