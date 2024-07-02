@@ -28,6 +28,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Sobre: 'index.md'
   - Planejamento: 
@@ -42,4 +45,7 @@ nav:
     - Reunião 3 - 03/04: 'atas/reuniao3.md'
   - Dojo:
     - Dojo Markdown: 'dojo/dojo-markdown.md'
+  - Lean Inception:
+    - Visão do Produto: 'lean/visao_produto.md'
+    - É - Não É - Faz - Não Faz: 'lean/faz_nao_faz.md'
 
