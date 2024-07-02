@@ -31,3 +31,4 @@ Na atividade "Objetivos de Negócio", cada membro da equipe compartilhou sua com
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 |02/07/2024| Criação do Documento | Davi Matheus |
+|02/07/2024| Revisão | Natanael Filho |
