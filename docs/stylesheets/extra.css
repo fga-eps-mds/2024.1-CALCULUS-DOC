@@ -1,0 +1,66 @@
+:root {
+    --md-primary-fg-color:        #036827;
+    --md-primary-fg-color--light: #036827;
+    --md-primary-fg-color--dark:  #036827;
+}  
+
+p {
+	text-align: justify;
+}
+
+p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+body{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container-img {
+  position: relative;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 80%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-img:hover .image {
+  opacity: 0.3;
+}
+
+.container-img:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  width: auto; 
+  text-decoration: none;
+}
+  
