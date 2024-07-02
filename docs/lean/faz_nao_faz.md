@@ -6,9 +6,22 @@ A atividade __É - Não É - Faz - Não Faz__ ajuda a definir um tópico (seja u
 Nessa etapa do Lean Inception, a equipe trabalha em conjunto para definir com clareza os limites do produto ou projeto. Isso é crucial para evitar dúvidas e garantir que todos estejam alinhados sobre o que está incluso e o que não está no escopo.
 
 
+### CLUSTERS
+
+            Engajamento do usário
+
+            Livre acesso
+
+            Integrações
+
+            Acessibilidade 
+
+            Administração/Moderação da aplicação 
+
+
 ## 2. Resultado
 
-![É, Não é, Faz, Não Faz](faz_naofaz.png)
+![É, Não é, Faz, Não Faz](../assets/lean/faz_naofaz.png)
 
 
 ## 3. Referências
