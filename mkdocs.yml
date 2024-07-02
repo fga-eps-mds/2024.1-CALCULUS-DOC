@@ -32,7 +32,7 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Sobre: index.md
+  - Sobre: 'index.md'
   - Planejamento: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento: 'planejamento/heatmap.md'
@@ -43,7 +43,9 @@ nav:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
     - Reunião 2 - 01/04: 'atas/reuniao2.md'
     - Reunião 3 - 03/04: 'atas/reuniao3.md'
+  - Dojo:
+    - Dojo Markdown: 'dojo/dojo-markdown.md'
   - Lean Inception:
     - Visão do Produto: 'lean/visao_produto.md'
     - É - Não É - Faz - Não Faz: 'lean/faz_nao_faz.md'
-    
+
