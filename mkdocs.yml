@@ -36,6 +36,7 @@ nav:
   - Planejamento: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento: 'planejamento/heatmap.md'
+    - Agenda e Ritual da Equipe: 'planejamento/agenda_ritual.md'
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
