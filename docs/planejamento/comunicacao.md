@@ -1,11 +1,9 @@
-# Canais de comunicação Comunicação da Equipe
+# Plano de comunicação Comunicação da Equipe
 
 ## Objetivo
 O objetivo deste documento é estabelecer diretrizes claras para a comunicação dentro da equipe, visando melhorar a eficiência, a colaboração e a coordenação de atividades.
 
 ## Formas de Comunicação
-
-
 
 | Imagem | Ferramenta         | Descrição de Uso                                                                 |
 |--------|--------------------|----------------------------------------------------------------------------------|
@@ -18,6 +16,7 @@ O objetivo deste documento é estabelecer diretrizes claras para a comunicação
 
 ## Horários de Disponibilidade
 Para garantir uma comunicação eficaz, é recomendado que todos os membros estejam disponíveis nas plataformas especificadas durante o horário de trabalho padrão. As reuniões no Microsoft Teams devem ser agendadas com antecedência sempre que possível, considerando a disponibilidade de todos os participantes.
+
 
 ## Etiqueta de Comunicação
 - **Respeito mútuo:** Todos os membros devem manter um tom profissional e respeitoso em todas as formas de comunicação.
