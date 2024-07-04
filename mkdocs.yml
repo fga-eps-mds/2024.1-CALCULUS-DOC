@@ -39,6 +39,8 @@ nav:
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
+  - Planos:
+    - Analise de Riscos: 'planos/planos_riscos.md'
   - Atas de Reunião:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
     - Reunião 2 - 01/04: 'atas/reuniao2.md'
