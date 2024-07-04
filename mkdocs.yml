@@ -33,9 +33,10 @@ extra_css:
 
 nav:
   - Sobre: 'index.md'
-  - Planejamento: 
+  - Planejamentos: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento: 'planejamento/heatmap.md'
+    - Planejamento de Comunicação: 'planejamento/comunicacao.md'
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
