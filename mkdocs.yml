@@ -42,6 +42,7 @@ nav:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
   - Planos:
+    - Analise de Riscos: 'planos/planos_riscos.md'
     - Plano de qualidade: 'planos/plano_qualidade.md'
   - Atas de Reunião:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
