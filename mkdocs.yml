@@ -33,13 +33,16 @@ extra_css:
 
 nav:
   - Sobre: 'index.md'
-  - Planejamento: 
+  - Planejamentos: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento: 'planejamento/heatmap.md'
     - Agenda e Ritual da Equipe: 'planejamento/agenda_ritual.md'
+    - Planejamento de Comunicação: 'planejamento/comunicacao.md'
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
+  - Planos:
+    - Plano de qualidade: 'planos/plano_qualidade.md'
   - Atas de Reunião:
     - Reunião 1 - 25/03: 'atas/reuniao1.md'
     - Reunião 2 - 01/04: 'atas/reuniao2.md'
