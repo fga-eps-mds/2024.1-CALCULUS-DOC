@@ -22,4 +22,4 @@ Após avaliar as personas e identificar um conjunto de funcionalidades, os membr
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 |02/07/2024| Criação do Documento | Davi Matheus |
-
+|03/07/2024| Revisao | Natanael Filho |
