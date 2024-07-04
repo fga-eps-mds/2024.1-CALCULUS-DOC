@@ -50,4 +50,7 @@ nav:
     - É - Não É - Faz - Não Faz: 'lean/faz_nao_faz.md'
     - Objetivos do Produto: 'lean/objetivos_produto.md'
     - Jornada: 'lean/jornada_usuário.md'
-
+    - Revisão Técnica, de Negócio e de UX: 'lean/revisao_tecnica.md'
+    - Sequenciador: 'lean/sequenciador.md'
+    - Personas: 'lean/personas.md'
+    - Brainstorm: 'lean/brainstorms_funcionalidades.md'
