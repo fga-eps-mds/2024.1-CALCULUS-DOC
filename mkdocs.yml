@@ -33,6 +33,8 @@ extra_css:
 
 nav:
   - Sobre: 'index.md'
+  - Organizações do Projeto: 
+    - Termo de Abertura do Projeto: 'organizacoes/tap.md'
   - Planejamentos: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento e pareamento: 'planejamento/conhecimento_pareamento.md'
