@@ -15,7 +15,7 @@ De acordo com a [Apuração do Custo das Universidades Federais no ano de 2016](
 Essa referência de custos é um ponto de partida valioso para estimar os gastos relacionados à equipe de desenvolvimento, treinamento, aquisição de ferramentas e tecnologias, hospedagem de servidores, e outros aspectos ao longo do ciclo de vida do projeto de software. Utilizar dados robustos como esse ajuda a garantir uma gestão financeira eficiente e informada, proporcionando uma base sólida para o planejamento e controle de custos durante todo o processo de desenvolvimento do software.
 
 
-## 3. Custos
+## 3. Cálculo 
 
             R$ 59.074,09 dividido por um ano ≈ R$ 161,87
 
