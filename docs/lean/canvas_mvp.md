@@ -28,6 +28,6 @@ Seguindo as orientações para a elaboração do canvas, a equipe se reuniu em 2
 
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
-|05/07/2024| Criação do Documento | Davi Matheus, Natanael Filho e João Victor |
+|05/07/2024| Criação do Documento | Davi Matheus, Natanael Filho e João Victor Max |
 
 
