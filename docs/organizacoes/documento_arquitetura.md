@@ -49,7 +49,7 @@ O Next.js é um framework de desenvolvimento baseado em React que permite a cria
 O NestJS é um framework de desenvolvimento baseado em Node.js que facilita a criação de aplicações escaláveis e eficientes. Ele utiliza uma arquitetura modular e orientada a objetos, permitindo a organização de código em módulos, controladores e serviços. Com suporte integrado para TypeScript, injeção de dependências e uma estrutura robusta para desenvolvimento de APIs e microsserviços, o NestJS é ideal para construir back-ends robustos e manuteníveis. O NestJS será utilizado no back-end.
 
 #### 2.3.3. PostgreSQL
-O PostgreSQL é um sistema gerenciador de banco de dados relacional de código aberto conhecido pela sua robustez, confiabilidade e capacidade de lidar com cargas de trabalho complexas. Ele oferece suporte a uma ampla gama de recursos avançados, como tipos de dados personalizados, extensões, transações ACID-compliant e replicação, tornando-o ideal para aplicações que requerem integridade e escalabilidade. O PostgreSQL será utilizado para gerenciar as bases de dados dos serviços da aplicação, garantindo segurança, desempenho e flexibilidade.
+O MongoDB é um banco de dados NoSQL de código aberto reconhecido pela sua flexibilidade e escalabilidade. Ele é projetado para lidar com grandes volumes de dados de forma eficiente e oferece esquemas dinâmicos, permitindo a modelagem de dados de maneira mais livre em comparação com bancos de dados relacionais. O MongoDB suporta operações de leitura e gravação de alto desempenho, distribuição automática de dados e consultas complexas usando sua linguagem de consulta avançada. Será utilizado para gerenciar as bases de dados dos serviços da aplicação, proporcionando agilidade, escalabilidade e suporte para aplicações que demandam grande flexibilidade no armazenamento e recuperação de dados.
 
 #### 2.3.4. Docker
 
@@ -64,7 +64,6 @@ O RabbitMQ é um sistema de mensageria de código aberto amplamente utilizado pa
 ## 3. Visão Lógica    
 
 ### 3.1. Diagrama de Pacotes
-
 
 
 #### 3.1.1 Introdução
