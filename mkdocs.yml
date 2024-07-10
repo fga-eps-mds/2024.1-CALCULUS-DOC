@@ -35,12 +35,13 @@ nav:
   - Sobre: 'index.md'
   - Organizações do Projeto: 
     - Termo de Abertura do Projeto: 'organizacoes/tap.md'
+    - Documento de Arquitetura: 'organizacoes/documento_arquitetura.md'
+    - EAP: 'organizacoes/eap.md'
   - Planejamentos: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento e pareamento: 'planejamento/conhecimento_pareamento.md'
     - Agenda e Ritual da Equipe: 'planejamento/agenda_ritual.md'
     - Planejamento de Comunicação: 'planejamento/comunicacao.md'
-    - EAP: 'planejamento/eap.md'
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
