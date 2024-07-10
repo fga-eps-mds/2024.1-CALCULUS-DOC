@@ -56,6 +56,7 @@ nav:
   - Dojo:
     - Dojo Markdown: 'dojo/dojo-markdown.md'
     - Dojo Git: 'dojo/dojo-git.md'
+    - Dojo Docker: 'dojo/dojo-docker.md'
   - Lean Inception:
     - Visão do Produto: 'lean/visao_produto.md'
     - É - Não É - Faz - Não Faz: 'lean/faz_nao_faz.md'
