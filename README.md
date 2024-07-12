@@ -45,7 +45,7 @@ python -m venv venv
 2. Acesse a Virtual Env
 
 ```powershell
-source venv/bin/active
+source venv/bin/activate
 ```
 
 3. Instale dependencias:
