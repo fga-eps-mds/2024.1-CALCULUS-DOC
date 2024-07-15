@@ -45,6 +45,7 @@ nav:
   - Guias:
     - Guia de contribuição: 'guias/guia-contribuicao.md'
     - Código de conduta: 'guias/codigo-conduta.md'
+    - Guia de estilo: 'guias/guia-estilo.md'
   - Planos:
     - Analise de Riscos: 'planos/planos_riscos.md'
     - Plano de qualidade: 'planos/plano_qualidade.md'
