@@ -23,4 +23,4 @@ Inclui as _user stories_ que serão entregues na primeira _release_.
 | Data | Versão | Descrição | Autor(es) |
 | ---- | ---- | ---- | ---- |
 | 07/07/2024 | 1.0 | Criação do Documento | João Victor Max, Paulo Henrique Gontijo |
-| 12/07/2024 | 1.0 | Atualização do Documento | João Victor Max, Paulo Henrique Gontijo |
+| 12/07/2024 | 1.1 | Atualização do Documento | João Victor Max, Paulo Henrique Gontijo |
