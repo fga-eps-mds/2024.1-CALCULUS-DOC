@@ -83,6 +83,15 @@ Ambos os Diagramas estão abaixo:
 
 <iframe frameborder="0" style="width:100%;height:513px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=calculus-diagram.drawio&page-id=nR3126rXf9x62OpuHPoS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1a0Ob_2W3N1eerm0drMZDin9y0jveMfpN%26export%3Ddownload"></iframe>
 
+### 3.3 Diagrama de Arquitetura
+A estrutura do projeto, planejada para seguir uma arquitetura de microsserviços, possui componentes chave para que seu ecossistema funcione corretamente. Dentre eles, está o papel fundamental da API Gateway bem como a individualização dos bancos de dados NoSQL, para trazer mais robustez e organização. Abaixo segue o artefato criado com o intuito de dar uma visão em baixo nível da arquitetura e seus componentes:
+
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/DPq1eFQn1xkJjiRNhKL4N7"></iframe>
+
+Nome: Diagrama de Arquitetura
+
+Autor: Calculus Team
+
 ## 4. Referencências bibliográficas
 
 > [1] EQUIPE ALECTRION 2022-2. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2022-2-Alectrion-DOC/#/./Documentos/arquitetura.
@@ -91,5 +100,6 @@ Ambos os Diagramas estão abaixo:
 
 |**Data**|**Descrição**|**Autore(es)**|
 |--------|-------------|--------------|
-| 09/07/2023 | Criação do documento | Davi Matheus|
-| 10/07/2023 | Revisao | Natanael Filho |
+| 09/07/2024 | Criação do documento | Davi Matheus|
+| 10/07/2024 | Revisao | Natanael Filho |
+| 15/07/2024 | Adição do Diagrama de Arquitetura | Paulo Gontijo e João Bisinotti |
