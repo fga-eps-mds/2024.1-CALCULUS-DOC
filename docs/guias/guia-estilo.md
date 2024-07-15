@@ -48,7 +48,7 @@ A logo representa um "C", de Calculus, porém seu design rebusca traços baseado
 ![Logo 2](../assets/calculus-logo2.png)
 
 
-|**Data**|**Descrição**|**Autore(es)**|
+|**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 |15/07/2024| Criação do documento | João Victor Max, Paulo Henrique Gontijo |
 
