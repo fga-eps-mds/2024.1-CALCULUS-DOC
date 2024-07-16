@@ -1,4 +1,4 @@
-# Guia de Contribuição
+# Guia de Estilo
 
 Este guia apresenta a identidade visual do produto desenvolvido neste projeto, que deve ser seguida ao desenvolver a interface de usuário do sistema.
 
