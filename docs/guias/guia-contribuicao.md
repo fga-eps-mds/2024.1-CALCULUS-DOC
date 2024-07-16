@@ -1,123 +1,154 @@
-# Guia de Contribuição
+# Git Flow
+Este documento tem o objetivo de consolidar padrões de uso do git no desenvolvimento de nossa aplicação.
+***
 
-Este guia tem como objetivo te ajudar a contribuir com o nosso projeto, por favor leia com atenção!
+## Motivação
+Conforme nomeação do documento, neste projeto usaremos uma adaptação do padrão **git flow**. Este conceito tem seu fundamento
+na organização de repositórios, atribuindo políticas de uso e restrições de segurança, sempre com objetivo de cumprir com
+as práticas mais adequadas, observadas e aperfeiçoadas ao longo do tempo.
 
-## 1. Antes de Começar
+***
 
-Os detalhes de como instalar e executar os projetos podem ser encontrados no [README.md](https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC#readme).
+## Políticas de Contribuição
+***
+### Idioma
+Por se tratar de um projeto univesitário do Brasil, por padrão, usaremos o idioma nativo, **Português**. Poŕem, sabe-se
+que a área de engenharia de software possui muitos conteúdos e termos em outros idiomas, como o próprio *git flow*, portanto 
+também será aceito o uso de **terminologias** no idioma **Inglês**. 
 
-## 2. Reportando Bugs
+***
+### Ética
+O projeto espera do colaborador bom senso na escrita, além de não permitir a produção contribuições com linguagem ofensiva.
+A proposta perpassa pela interação direta com a vivência e moradia de pessoas, portanto também assume-se o compromisso 
+de não violar o respeito em qualquer aspecto, sobretudo étnico racial, religião e sexualidade.
 
-Você encontrou um bug?
+***
+## Branches
+### Fluxo de Branches
+Para garantir um fluxo de trabalho contínuo e de forma padronizada, possibilitando o rastreamento das funcionalidades
+desenvolvidas e facilitando o desenvolvimento contínuo. Os conceitos chave para implementação da estratégia serão:
 
-- Sugestões de melhoria são rastreadas através de [_issues_](https://guides.github.com/features/issues/) e [_pull requests_](https://guides.github.com/activities/hello-world/#pr) no GitHub. Verifique se nenhuma _issue_ ou _pull request_ foi criada por outra pessoa com o mesmo bug.
+* `Main`
+Branch de **produção**, responsável por abrigar o código do último release. 
 
-- Se não, crie uma _issue_ explicando o problema e adicionando novas informações detalhadas que ajudem a reproduzi-lo.
+* `Qas`
+Branch de **verificação**, representa uma etapa intermediária entre o processo de desenvolvimento e produção. Nesta etapa
+são realizados os eventuais testes e revisões que antecedem o processo de deploy.
 
-## 3. Sugerindo Melhorias
+* `Dev`
+Branch de **desenvolvimento**, tem a função e prioridade de ser a branch mais atualizada, a qual os desenvolvedores utilizaram
+de ponto de partida para desenvolver as *features branches*.
 
-Você pode sugerir as melhorias que achar pertinente. Pedimos apenas que tente incluir o máximo de detalhes possíveis e que verifique se nenhuma _issue_ ou _pull request_ já foi criado por outra pessoa com a mesma sugestão.
+* `Feature`
+Branch de desenvolvimento de **funcionalidade**, representa a branch de trabalho sob uma determinada funcionalidade, tarefa, 
+correção de bugs e afins.
 
-Caso seja algo novo, você tem duas alternativas:
+* `Fix`
+Branch de **correção**, possibilita os desenvolvedores de corrigirem eventuais funcionalidades quebradas. 
 
-- Criar uma nova _issue_.
-- Compartilhar a sua sugestão com outros participantes e mantenedores do projeto.
-
-Em ambos, tente usar uma linguagem clara e com o máximo de detalhes. Qual a motivação, qual problema resolveria e possíveis desafios, por exemplo, são importantes para entender o que você precisa. Esse é um projeto de código aberto, mantido por voluntários. Frequentemente precisamos escolher bem o que vamos fazer com os recursos que temos.
-
-## 4. Criando Pull Requests
-
-Você decidiu contribuir para o projeto!
-
-Faça um _fork_ do projeto e crie uma nova _branch_.
-Mais detalhes [aqui](https://help.github.com/pt/enterprise/2.17/user/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
-
-
-Aqui algumas dicas:
-
-- Caso decida trabalhar em alguma _issue_, comente na _issue_ escolhida. Dessa forma, outras pessoas saberão que tem alguém trabalhando nela. Caso tenha ficado perdido ou com dúvidas, peça ajuda.
-
-- Caso tenha visto algo pontual, como um _typo_ ou algo que pode ser corrigido e testado rapidamente e não envolva mudanças estruturais, você é bem-vindo a abrir um novo PR também.
-
-- Antes de qualquer coisa, tente rodar o projeto localmente.
-
-- Rode os testes localmente. Além de ser uma boa prática, previne idas e vindas nas revisões.
-
-- Embora o código esteja escrito em inglês, por convenção, as mensagens de _commit_, comentários, _pull requests_, _issues_, e demais comunicações do projeto deverão ser escritas em português.
-
-- Marque a opção "Permitir edição pelos mantenedores". Assim poderemos fazer modificações de emergência mantendo o _pull request_ aberto por você.
-
-
-Nós possuimos também um template para o _pull request_ que seguirá da seguinte forma:
-
-Descrição
-- Criando e arrumando alguns docs
-
- Revisão 
-<!-- Verifica se os critérios estabelecidos na issue foram realizados -->
-- [x] mkdocs 
-- [x] Prototipo de alta
-- [x] User  Story Template
-
- Pre-merge checklist 
-
-- [x] O Pull Request refere-se a um único assunto, um título claro e uma descrição em frases gramaticalmente corretas e completas.
-- [x] A branch está atualizada com a branch main.
-- [x] Os commits atendem o padrão especificado na política de contribuição.
-
-## 5. Política de Branch
-
-As branches serão nomeadas seguindo de maneira padronizada para a melhorar a organização do projeto. Utilizamos as branches apenas para desenvolvimento de código sendo que todas as branches devem ser criadas a partir da **main** e devem estar nomeadas da seguinte maneira:
-
-**OBSERVAÇÃO:** A fim de evitar dores de cabeça, não utilizar caracteres especiais na criação de branches.
+#### Exemplo do fluxo de branches
+Abaixo segue a ilustração do fluxo:
 
 
-```bash
-(tipo)-(issue)-(descrição)
+![Figura 1: Fluxo de Branches](../assets/gitflow/diagrama-gitflow.drawio.png) 
+Figura 1: Fluxo de Branches
 
-Exemplo: 
-tipo: doc
-issue: #24
-descrição: Criar guia de contribuição
+Autor: Calculus Team
 
-doc-24-guiaDeContribuicao
-```
+### Nomenclatura de Branch
+É importante que a branch de **funcionalidade** seja criada seguindo o padrão: 
 
-Sendo que X representa número da issue atribuída seguido pelo nome do documento a ser criado ou modificado, como destacado anteriormente. Em ocasiões em que não se está trabalhando com nenhum documento em específico, então deve-se colocar o nome da issue correspondente.
+* **(número-da-issue)-(nome-da-issue)**
 
-## 6. Política de Commit
+e seja criada a partir da branch de desenvolvimento `Dev` e deve-se trocar os espaços no nome para '-'.
 
-### 6.1 Formato:
+A branch de **correção** deve ser criada no padrão: 
 
-Os commits devem ser feitos de maneira clara e objetiva respeitando os padrões comentados a seguir:
+- **fix#(número-da-issue)/nome-da-issue**
 
-- Devem possuir um tipo, número da issue associada e o assunto.
-- Devem ser escritas em português.
-- Os verbos devem estar no gerúndio.
-
-Portanto a formatação do commit será: `<tipo>(#número da issue): assunto`
-
-```bash
-feat(#04): Desenvolvendo cadastro da impressora
+e originar-se da branch que apresentou o erro, exceto se for a branch `Main`. Em caso de exceção, deve-se crira uma branch a partir de `Dev`.
 
 
+## Commits
 
-Co-authored-by: fernandes-natanael <filhonatanael01@gmail.com>
+As informações abaixo referem-se aos padrões de escrita de commits do nosso repositório:
+
+### Commits Atômicos
+Sempre dividir o trabalho em **pequenos e significativos commits**, de maneira que cada commit implemente apenas uma
+funcionalidade.
+
+### Anatomia do Commit
+Na estrutura do padrão convencionado, possuímos as variáveis **tipo**, **número da issue**, **assunto** e **corpo**.
+A anatomia do commit deve seguir o formato determinado abaixo:
 
 ```
+[tipo](#número da issue): assunto 
+> corpo
+```
 
-#### 6.1.1 Tipos:
-- feat: quando adicionar nova funcionalidade
-- doc: quando escrever documentação
-- repeat: quando alguma alteração for feita
-- refact: refatoração ou otimização
-- bug: quando consertar um bug
-- remove: quando remover código ou arquivos
+#### Observações
+> As opções permitidas para o campo `tipo` são:
 
-|**Data**|**Descrição**|**Autore(es)**|
-|--------|-------------|--------------|
-|04/02/2024| Criação do documento | Natanael Fernandes |
+> - `feat`: nova funcionalidade
+> - `docs`: relacionado a documentação
+> - `refact`: refatoração  de código
+> - `test`: adicionar/refatorar testes
+> - `fix`: correções
 
+> As regras para o campo `assunto` são:
+
+> - Mensagem curta e sucinta
+> - Todo texto deve estar sempre em letras minúsculas
+
+> As regras para o campo `corpo` são:
+
+> - Máximo de 100 caracteres
+> - Detalhar minimamente as novas alterações
+> - Deve conter `o que` e o `por que` foi feito
+
+### Exemplo de commit:
+Abaixo segue um exemplo de commit feito no padrão do projeto:
+```git
+[refact](#25): ajustando página de login  
+Refatoração do método de login pois a execução estava muito lenta. 
+```
+
+***
+## Pull Request
+#### Passo 1 
+Por meio do processo de **pull request**, realizado no github, toda nova funcionalidade deve ser integrada à branch de
+desenvolvimento, seguindo o fluxo `Feature -> Dev`.
+
+#### Passo 2
+Uma vez que a branch de desenvolvimento esteja com todos os artefatos necessários para se fazer deploy, deve-se criar um
+pull request de `Dev -> Qas`.
+
+#### Passo 3
+A branch de validação (qas) deve ser **revisada por todos os membros antes de relizar-se o merge para a branch Main**. 
+Desta forma pode-se adicionar mais uma camada de validação pré-deploy e conferir mais acertividade nas entregas. Após 
+concluir a validação, 
+
+> Dentre as atividades obrigatórias de um pull request, estão a **revisão em pares** da entrega e **ajuste de eventuais conflitos**. 
+
+> O colaborador que abrir o pull request **não pode mergear o mesmo sem revisões de terceiros**.
+
+Para publicar uma nova versão estável da aplicação na branch `main` é necessário realizar um **Pull Request** da branch `qas` para a `main`. Assim garantido a revisão da nova versão do código.
+
+### Nomenclatura
+Toda branch deve estar necessariamente estar relacionada a uma funcionalidade ou correção, logo a uma _Issue_. O nome da branch deve estar em PORTUGUÊS seguindo o padrão:
+
+- Para funcionalidades: `feat#(número-da-issue)/descrição-curta`
+- Para correções: `fix#(número-da-issue)/descrição-curta`
+
+Exemplo: `feat#75/criar-jornada`
+
+***
+## Histórico de Versões
+
+| Versão |    Data    |           Descrição           |                                                    **Autore(es)**                                                   |
+|:------:|:----------:|:-------------------------------:|:-----------------------------------------------------------------------------------------------------------:|
+|  1.0   |04/02/2024| Criação do documento | Natanael Fernandes |
+|  1.1   | 08/07/2024 | Atualização de documento e diagrama | Paulo Gontijo |
 
 
 
