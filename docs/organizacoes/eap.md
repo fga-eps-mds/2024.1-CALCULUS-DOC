@@ -15,6 +15,8 @@ Os treinamentos foram feitos dos estudantes de EPS para os estudantes de MDS, pa
 ### Release 1
 Inclui as _user stories_ que serão entregues na primeira _release_.
 
+### Release MVP
+Inclui as _user stories_ que serão entregues complementando o MVP definido.
 
 ## Resultado 
 <iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/GkP1xrKnJBVZ2HNrVVQhB3"></iframe>
