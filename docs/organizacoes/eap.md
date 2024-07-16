@@ -15,7 +15,7 @@ Os treinamentos foram feitos dos estudantes de EPS para os estudantes de MDS, pa
 ### Release 1
 Inclui as _user stories_ que serão entregues na primeira _release_.
 
-### Release 1
+### Release MVP
 Inclui as _user stories_ que serão entregues complementando o MVP definido.
 
 ## Resultado 
@@ -25,4 +25,4 @@ Inclui as _user stories_ que serão entregues complementando o MVP definido.
 | Data | Versão | Descrição | Autor(es) |
 | ---- | ---- | ---- | ---- |
 | 07/07/2024 | 1.0 | Criação do Documento | João Victor Max, Paulo Henrique Gontijo |
-| 12/07/2024 | 1.0 | Atualização do Documento | João Victor Max, Paulo Henrique Gontijo |
+| 12/07/2024 | 1.1 | Atualização do Documento | João Victor Max, Paulo Henrique Gontijo |
