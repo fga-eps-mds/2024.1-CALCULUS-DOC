@@ -12,7 +12,7 @@
 - Kanban
 
 ### Sprint
-- **Duração:** 1 semana
+- **Duração:** 2 semana
 
 ## Planejamento de Sprint
 
@@ -20,10 +20,11 @@
 
 **Tarde:**
 
-- **14:00 - 16:00:** Sprint Planning 
+- **19:00 - 21:00:** Sprint Planning 
   - Revisão do backlog
   - Definição das histórias do usuário para a sprint
   - Estimativas de tempo e tarefas
+- **21:00 - 22:00:** Reuniao com PO
 
 ### Segunda-Feira
 
