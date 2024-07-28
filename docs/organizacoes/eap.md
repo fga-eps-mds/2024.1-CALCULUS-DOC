@@ -4,7 +4,9 @@
 A primeira versão da EAP mapeia os entregáveis do projeto planejados até então.
 
 ### Visão do Produto
-A visão do produto inclui o Canva MVP, que foi desenvolvido durante a Lean Inception e o backlog do produto definido pela equipe de desenvolvimento em conjunto com o cliente.
+A visão do produto inclui o Canva MVP, que foi desenvolvido durante a Lean Inception e o backlog do produto definido pela equipe de desenvolvimento em conjunto com o cliente. Abaixo segue o artefato criado:
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FPqgargzEhsJcxVetj2EUrt%2FVisao-do-Produto-2024.1%3Fnode-id%3D0-1%26t%3D4xLrlDAEaMLJxjf8-1" allowfullscreen></iframe>
 
 ### Documentação
 A documentação inclui os principais documentos que definem prazos, orçamentos, aspectos do produto e do projeto.

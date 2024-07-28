@@ -87,7 +87,7 @@ Para uma visão detalhada sobre o plano de riscos do projeto, por favor, consult
 
 **Release 1**
 
-- 22/07/2024
+- 29/07/2024
 
 **Release Final**
 
