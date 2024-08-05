@@ -1,4 +1,4 @@
-## Agenda de Equipe - Projeto de Programação
+## Agenda de Equipe e Rituais
 
 ### Equipe
 - **Estudantes EPS:** 4
@@ -9,57 +9,33 @@
 - Extreme Programming (XP)
 - Pair Programming (iniciantes sempre com experientes)
 - Scrum
-- Kanban
 
 ### Sprint
 - **Duração:** 1 semana
 
-## Planejamento de Sprint
-
-### Domingo
-
-**Tarde:**
-
-- **14:00 - 16:00:** Sprint Planning 
-  - Revisão do backlog
-  - Definição das histórias do usuário para a sprint
-  - Estimativas de tempo e tarefas
-
+## Agenda de Rituais
 ### Segunda-Feira
 
-**Manhã:**
-
 - **12:00 - 12:15:** Daily Stand-up
-
-**Tarde:**
-
-- **19:00 - 22:00:** Pair Programming 
-  - Formação de pares (1 estudante experiente + 1 estudante iniciante)
-  - Desenvolvimento das histórias do usuário
+- **19:00 - 21:00:** Sprint Planning 
+  - Revisão do backlog
+  - Estimativas de tempo e tarefas
+- **21:00 - 22:00:** Reuniao com PO
+  - Apresentação dos entregáveis da semana
+  - Definição das histórias do usuário para a sprint
+    - Definição dos critérios de aceite
+  - Feedback do Product Owner e stakeholders
 
 ### Terça-Feira a Quinta-Feira
 
-**Manhã:**
-
 - **12:00 - 12:15:** Daily Stand-up
-- **13:00 - 14:00:** Pair Programming
-
-**Tarde:**
-
-- **19:00 - 22:00:** Pair Programming
-  - Continuação do Pair Programming
-  - Sessões de Code Review e Refatoração
-  - Implementação de testes
+- **19:00 - 22:00:** Pair Programming 
+  - Formação de pares (1 estudante experiente + 1 estudante iniciante)
+  - Desenvolvimento das atividades
 
 ### Sexta-Feira
 
-**Manhã:**
-
 - **12:00 - 12:15:** Daily Stand-up
-- **13:00 - 14:00:** Pair Programming
-
-**Tarde:**
-
 - **19:00 - 22:00:** Pair Programming
   - Continuação do Pair Programming
   - Sessões de Code Review e Refatoração
@@ -68,19 +44,12 @@
 
 ### Sábado
 
-**Tarde:**
-
 - **13:00 - 15:00:** Sprint Review
   - Demonstração das funcionalidades desenvolvidas
-  - Feedback do Product Owner e stakeholders
 
 - **15:00 - 16:00:** Sprint Retrospective
   - Reflexão sobre o que funcionou bem e o que pode ser melhorado
   - Planejamento de ações para a próxima sprint
-
-- **16:00 - 17:00:** Sprint Planning para a próxima semana
-  - Revisão e ajuste do backlog
-  - Definição das metas e histórias do usuário para a próxima sprint
 
 ### Atividades Contínuas
 
@@ -103,3 +72,4 @@
 | Data | Versão | Descrição | Autor(es) |
 | ---- | ---- | ---- | ---- |
 | 03/07/2024 | 1.0 | Criação do Documento | Natanael Fernandes |
+| 28/07/2024 | 1.1 | Ajuste de agenda e rituais |

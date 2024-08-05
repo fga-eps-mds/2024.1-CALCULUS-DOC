@@ -4,7 +4,9 @@ Calculus é uma plataforma de aprendizado, 100% feita por estudantes da UnB, pro
 
 ## Repositórios
 
-Ainda não há repositórios relacionados.
+- [2024.1-CALCULUS-Frontend](https://github.com/fga-eps-mds/2024.1-CALCULUS-Frontend)
+- [2024.1-CALCULUS-Gateway](https://github.com/fga-eps-mds/2024.1-CALCULUS-Gateway)
+- [2024.1-CALCULUS-UserService](https://github.com/fga-eps-mds/2024.1-CALCULUS-UserService)
 
 ## Setup Documentação
 
@@ -45,7 +47,7 @@ python -m venv venv
 2. Acesse a Virtual Env
 
 ```powershell
-source venv/bin/active
+source venv/bin/activate
 ```
 
 3. Instale dependencias:
