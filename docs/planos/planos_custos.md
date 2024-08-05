@@ -16,18 +16,12 @@ Essa referência de custos é um ponto de partida valioso para estimar os gastos
 
 
 ## 3. Cálculo 
-
-            R$ 59.074,09 dividido por um ano ≈ R$ 161,87
-
-            Calculando o custo por dia de cada aluno.
-
-            R$ 161,87 X 5 dias ≈ R$ 809,35
-
-            Calculando o valor por semana utilizando os dias utéis
-
-            R$ 809,35 X 11 integrantes = R$ 8.902,85
-
-            Calculando o valor de 11 integrantes (EPS/MDS) por semana
+- Calculo do custo por dia de cada aluno:
+> R$ 59.074,09 / 365 dias ≈ R$ 161,87
+- Calculo de custo semanal (dias úteis):
+> R$ 161,87 X 5 dias ≈ R$ 809,35
+- Custo total do projeto
+> R$ 809,35 X 11 integrantes = R$ 8.902,85
 
 ### Internet
 Segundo uma análise realizada no site Portal de planos, o custo médio de uma internet móvel de 100 gb, que seria suficiente para o projeto, custaria em média R$ 150,00/mês.

@@ -77,7 +77,7 @@ Para obter informações detalhadas sobre os requisitos do projeto, por favor, c
 
 ## 6. Riscos e restrições
 
-Para uma visão detalhada sobre o plano de riscos do projeto, por favor, consulte o documento dedicado a este tópico. Este documento oferece uma análise completa dos potenciais riscos, suas implicações e as estratégias de mitigação propostas. Você pode acessar o documento completo através do link [Plano de Riscos Detalhado](../../planos/planos_riscos).
+Para uma visão detalhada sobre o plano de riscos do projeto, por favor, consulte o documento dedicado a este tópico. Este documento oferece uma análise completa dos potenciais riscos, suas implicações e as estratégias de mitigação propostas. Você pode acessar o documento completo através do link [Plano de Riscos Detalhado](./../planos/planos_custos.md).
 
 ## 7. Prazos e Entregas
 
@@ -87,7 +87,7 @@ Para uma visão detalhada sobre o plano de riscos do projeto, por favor, consult
 
 **Release 1**
 
-- 22/07/2024
+- 29/07/2024
 
 **Release Final**
 
@@ -95,7 +95,7 @@ Para uma visão detalhada sobre o plano de riscos do projeto, por favor, consult
 
 ## 8. Plano de orçamento
 
-Para obter informações detalhadas sobre o plano de orçamento, por favor, consulte o documento específico dedicado a este tópico. Este documento contém uma análise abrangente e detalhada das previsões financeiras, alocações de recursos e outras considerações orçamentárias. Você pode acessar o documento completo através do link [Plano de custos](../../planos/planos_custos).
+Para obter informações detalhadas sobre o plano de orçamento, por favor, consulte o documento específico dedicado a este tópico. Este documento contém uma análise abrangente e detalhada das previsões financeiras, alocações de recursos e outras considerações orçamentárias. Você pode acessar o documento completo através do link [Plano de custos](./../planos/planos_custos.md).
 
 ## Referências
 

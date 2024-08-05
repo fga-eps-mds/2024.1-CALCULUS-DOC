@@ -36,7 +36,7 @@ nav:
   - Organizações do Projeto: 
     - Termo de Abertura do Projeto: 'organizacoes/tap.md'
     - Documento de Arquitetura: 'organizacoes/documento_arquitetura.md'
-    - EAP: 'organizacoes/eap.md'
+    - Estrutura Analítica do Projeto: 'organizacoes/eap.md'
   - Planejamentos: 
     - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de conhecimento e pareamento: 'planejamento/conhecimento_pareamento.md'
