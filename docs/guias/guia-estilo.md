@@ -13,44 +13,23 @@ Este exemplo de escala de tipo, extraído do Material Design, usa a fonte Roboto
 
 ![Tipografia](../assets/tipografia.png)
 
-
 ## 2. Paleta de Cores
 
-### 2.1. Cores Primárias
+![Paleta](../assets/paleta.jpeg)
 
-![Cores Primarias](../assets/Primary-Color-Theme.jpeg)
-
-
-#### 2.1.1. Laranja Vibrante
-Um tom de laranja vibrante, energizante e chamativo, ideal para chamar a atenção e adicionar uma sensação de entusiasmo ao design.
-
-#### 2.1.2. Azul Escuro
-Um tom de azul escuro, que transmite confiança e seriedade, sendo ideal para elementos que precisam de destaque sem perder a sobriedade.
-
-#### 2.1.3. Cinza Claro 
-Um tom de cinza muito claro, quase branco, que pode ser usado como cor de fundo para criar contrastes suaves e manter a limpeza visual.
-
-### 2.2. Cores Secundárias
-
-![Cores Secundarias](../assets/Secundary-Color-Theme.jpeg)
-
-#### 2.2.1. Verde Menta
-Um tom de verde menta, que traz frescor e modernidade, ideal para destacar elementos sem ser muito agressivo visualmente.
-
-#### 2.2.2. Cinza Médio
-Um tom de cinza médio, versátil e neutro, perfeito para equilibrar e complementar as outras cores da paleta.
 
 ## 3. Logo
-A logo representa um "C", de Calculus, porém seu design rebusca traços baseados em formas geométricas. Além disso a logo faz referência ao jogo Pac-Man, pelo fato de o produto aplicar gamificação na jornada do usuário aluno.
 
+![Logo](../assets/logo.svg)
 
-![Logo 1](../assets/calculus-logo1.png)
-![Logo 2](../assets/calculus-logo2.png)
+## 4. Ícones
+Os ícones vão seguir o [Material Icons](https://mui.com/material-ui/material-icons/)
 
 
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 |15/07/2024| Criação do documento | João Victor Max, Paulo Henrique Gontijo |
+|07/08/2024| Alteração do documento | João Victor Max |
 
 
 
