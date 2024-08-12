@@ -5,7 +5,6 @@ Calculus é uma plataforma de aprendizado, 100% feita por estudantes da UnB, pro
 ## Repositórios
 
 - [2024.1-CALCULUS-Frontend](https://github.com/fga-eps-mds/2024.1-CALCULUS-Frontend)
-- [2024.1-CALCULUS-Gateway](https://github.com/fga-eps-mds/2024.1-CALCULUS-Gateway)
 - [2024.1-CALCULUS-UserService](https://github.com/fga-eps-mds/2024.1-CALCULUS-UserService)
 
 ## Setup Documentação
