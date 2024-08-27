@@ -115,3 +115,4 @@ width="100%" height="480"></iframe>></iframe>
 | Data | Versão | Descrição | Autor(es) |
 | ---- | ---- | ---- | ---- |
 | 20/08/2024 | 1.0 | Criação do Documento | Davi Matheus|
+| 27/08/2024 | 1.0 | Atualização do Documento | Davi Matheus|
