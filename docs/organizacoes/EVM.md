@@ -8,14 +8,13 @@ Earned Value Management (EVM) é uma metodologia eficaz para controlar e analisa
 
 ### 2.1 Valor Planejado (PV - Planned Value):
 
-- Valor do trabalho que deveria ter sido realizado até um ponto específico no tempo, conforme o cronograma planejado.
+- O valor planejado representa o trabalho que deve ser realizado e reflete o custo total planejado do projeto em qualquer ponto ao longo do tempo.
+
 
 >  Fórmula
 
+`PV = custo total do projeto * % de trabalho planejado `
 
-            PV=Percentual Planejado×Orçamento Total
-
-            
 ### 2.2 Valor Agregado (EV - Earned Value):
 
 -  Valor do trabalho realmente realizado até o momento, medido em termos do orçamento autorizado.
@@ -23,64 +22,85 @@ Earned Value Management (EVM) é uma metodologia eficaz para controlar e analisa
 >  Fórmula
 
 
-            EV = Percentual Concluído×Orçamento Total
+`EV = custo total do projeto * % de trabalho realizado`
 
 ### 2.3 Custo Real (AC - Actual Cost):
 
--  Custo efetivo incorrido para realizar o trabalho até o momento.
+- O custo real reflete o total de despesas incorridas em uma atividade durante um período específico, abrangendo custos com hardware, infraestrutura, materiais, entre outros. O AC (Custo Real) é uma medida cumulativa que contabiliza todos os custos do projeto desde o início até a sua conclusão.
+
+
+>  Fórmula
+
+`AC = custo real`
+
+### 2.4 Orçamento na conclusão (BAC, Budget at Completion):
+
+- O BAC (Budget at Completion) representa o custo total previsto para todo o trabalho planejado, sendo baseado no valor final estimado do projeto.
 
 >  Fórmula
 
 
-           AC=Custo Real Incorrido
+`BAC = custo total do trabalho`
+
+## 3. Variações:
 
 
-## 3. Métricas Cruciais:
+### 3.1 Variação do custo (CV, Cost Variance):
 
-### 3.1 Índice de Desempenho de Custo (CPI - Cost Performance Index):
-
-- Mede a eficiência do custo do trabalho realizado. Um CPI maior que 1 indica eficiência superior à planejada.
-
->  Fórmula
-
-
-            CPI= AC/EV
-
-
-### 3.2 Índice de Desempenho de Prazo (SPI - Schedule Performance Index):
-
--  Mede a eficiência do cronograma do trabalho realizado. Um SPI maior que 1 indica que o trabalho está sendo concluído mais rapidamente do que o planejado.
+- É um indicador quantitativo que mede a diferença entre o orçamento planejado e o desempenho financeiro real do projeto. Se o CV > 0, o projeto está abaixo do orçamento; se CV < 0, o projeto está acima do orçamento; e se CV = 0, o projeto está conforme o orçamento planejado.
 
 >  Fórmula
 
+`CV = EV - AC`
 
-            SPI= PV/EV
+### 3.2 Variação do prazo (SV, Schedule Variance):
+
+- É um indicador que mede a variação em relação ao cronograma planejado. Se o SV > 0, o projeto está adiantado; se SV < 0, o projeto está atrasado; e se SV = 0, o projeto está alinhado com o cronograma previsto.
+
+>  Fórmula
+
+`SV = EV - PV`
+
+## 4. Métricas Cruciais:
+
+
+### 4.1 Índice de Desempenho de Custo (CPI - Cost Performance Index):
+
+- Expressa a relação entre o valor agregado e o custo real, medindo a eficiência dos custos do trabalho realizado. Um CPI maior que 1 indica que o projeto está sendo executado de forma mais eficiente do que o planejado.
+
+
+>  Fórmula
+
+`CPI = EV / AC`
+
+
+### 4.2 Índice de Desempenho de Prazo (SPI - Schedule Performance Index):
+
+-  Expressa a relação entre o valor realizado e o valor planejado, medindo assim a eficiência do uso do tempo. Um SPI maior que 1 indica que o trabalho está sendo concluído mais rapidamente do que o previsto no cronograma.
+
+>  Fórmula
+
+`SPI = EV / PV`
+
 ​
-## 4. Projeções e Estimativas:
+## 5. Projeções e Estimativas:
 
 
-### 4.1 Estimativa no Término (EAC - Estimate at Completion):
-
--  E    stimativa do custo total do projeto com base no desempenho atual. Pode ser calculada de várias maneiras, incluindo a fórmula baseada no CPI.
-
->  Fórmula
+### 5.1 Estimativa no Término (EAC - Estimate at Completion):
 
 
-            EAC=AC + BAC -EV/CPI
+-  Custo esperado para terminar o restante do projeto.
 
-            Onde: BAC = Budget at Completion (Orçamento Total)
-
-            
-### 4.2 Variação no Término (VAC - Variance at Completion):
-
--  Diferença entre o orçamento estimado e a estimativa atual de custo, indicando se o projeto ficará abaixo ou acima do orçamento.
-
->  Fórmula
+`EAC = (BAC - EV) / CPI`
 
 
-            VAC=BAC−EAC
+### 5.1 Estimativa na conclusão :
 
-## 5. Aplicações do EVM:
+- Representa o custo total esperado quando o trabalho for totalmente finalizado.
+
+`EAC = AC + ETC`
+
+## 6. Aplicações do EVM:
 
 - Controle de Desempenho: Comparando o EV com o PV e AC, o EVM fornece uma visão clara do desempenho do projeto em termos de custo e cronograma.
 - Previsão de Resultados: Utilizando CPI e SPI, os gerentes de projeto podem prever o custo final do projeto e tomar medidas corretivas para manter o projeto no caminho certo.
@@ -95,3 +115,4 @@ width="100%" height="480"></iframe>></iframe>
 | Data | Versão | Descrição | Autor(es) |
 | ---- | ---- | ---- | ---- |
 | 20/08/2024 | 1.0 | Criação do Documento | Davi Matheus|
+| 27/08/2024 | 1.0 | Atualização do Documento | Davi Matheus|
