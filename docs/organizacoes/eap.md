@@ -21,7 +21,7 @@ Esta seção inclui as _user stories_ que serão entregues na primeira _release_
 Esta seção inclui as _user stories_ que serão entregues complementando o MVP definido.
 
 ## Resultado
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/GkP1xrKnJBVZ2HNrVVQhB3"></iframe>
+![EAP](../assets/eap.png)
 
 ## Histórico de Versão
 | Data       | Versão | Descrição             | Autor(es)                          |
