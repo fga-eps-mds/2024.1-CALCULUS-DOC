@@ -27,21 +27,13 @@ A arquitetura de microsserviços acelera o desenvolvimento e facilita a escalabi
 
 ### 2.2. Representação dos serviços
 
-#### 2.2.1. Gateway
-
-O gateway é responsável por atuar como a interface entre o usuário e os demais serviços da aplicação, garantindo autenticação e autorização. Além disso, ele facilita a comunicação entre os serviços, servindo como ponto central para a gestão de requisições e respostas. No Caluculos, utilizaremos RabbitMQ para gerenciar a comunicação assíncrona entre os microsserviços, assegurando um fluxo de dados eficiente e confiável.
-
-#### 2.2.2. Usuário
+#### 2.2.2. User Service
 
 O serviço de usuário é responsável pela gestão completa dos usuários da aplicação. Isso inclui o registro, autenticação, atualização de informações, gerenciamento de permissões e controle de acesso, garantindo uma experiência segura e personalizada para cada usuário.
 
-#### 2.2.3. Jornadas
+#### 2.2.3. Application Service
 
-O serviço de jornadas é responsável pela gestão das jornadas na aplicação. Isso inclui a criação, atualização e exclusão de jornadas, bem como a administração das inscrições dos clientes, permitindo que eles ingressem e participem das jornadas de forma eficiente e organizada.
-
-#### 2.2.4. Gamificação
-
-O serviço de gamificação é responsável por gerenciar a progressão dos usuários nas trilhas, acompanhando o avanço passo a passo nos exercícios. Ele também administra o sistema de recompensas, incentivando a participação ativa dos usuários através de pontos, medalhas e outros incentivos, promovendo uma experiência mais envolvente e motivadora na aplicação.
+O serviço de aplicação é responsável por todas as funcionalidades referentes à experiência de todos os níveis de usuários autenticados no sistema.
 
 ### 2.3. Tecnologias
 
@@ -61,10 +53,6 @@ O MongoDB é um banco de dados NoSQL de código aberto reconhecido pela sua flex
 
 O Docker é uma plataforma de virtualização de contêineres que transformou a maneira como aplicações são desenvolvidas, empacotadas e implantadas. Ele proporciona aos desenvolvedores a capacidade de criar ambientes isolados e autossuficientes para suas aplicações, conhecidos como contêineres. Esses contêineres encapsulam não apenas o código da aplicação, mas também todas as dependências necessárias, como bibliotecas e configurações, garantindo consistência e portabilidade entre diferentes ambientes de desenvolvimento e produção.
 
-#### 2.3.5. RabbitMQ
-
-O RabbitMQ é um sistema de mensageria de código aberto amplamente utilizado para facilitar a comunicação entre diferentes partes de uma aplicação distribuída. Ele funciona como um intermediário que permite que os diversos componentes do sistema troquem mensagens de forma assíncrona e confiável. O RabbitMQ suporta diversos padrões de mensageria, como filas, trocas e roteamento de mensagens, proporcionando flexibilidade na configuração e escalabilidade para aplicações que exigem comunicação distribuída.
-
 ## 3. Visão Lógica
 
 ### 3.1. Diagrama de Pacotes
@@ -79,14 +67,14 @@ Ambos os Diagramas estão abaixo:
 
 <iframe frameborder="0" style="width:100%;height:553px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=calculus-diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1a0Ob_2W3N1eerm0drMZDin9y0jveMfpN%26export%3Ddownload"></iframe>
 
-### 3.2. Diagrama de Implementação
+### 3.2. Diagrama de Implantação
 
 <iframe frameborder="0" style="width:100%;height:513px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=calculus-diagram.drawio&page-id=nR3126rXf9x62OpuHPoS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1a0Ob_2W3N1eerm0drMZDin9y0jveMfpN%26export%3Ddownload"></iframe>
 
 ### 3.3 Diagrama de Arquitetura
 A estrutura do projeto, planejada para seguir uma arquitetura de microsserviços, possui componentes chave para que seu ecossistema funcione corretamente. Dentre eles, está o papel fundamental da API Gateway bem como a individualização dos bancos de dados NoSQL, para trazer mais robustez e organização. Abaixo segue o artefato criado com o intuito de dar uma visão em baixo nível da arquitetura e seus componentes:
 
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/DPq1eFQn1xkJjiRNhKL4N7"></iframe>
+![Arquitetura](../assets/diagrama_arquitetura.png)
 
 Nome: Diagrama de Arquitetura
 
