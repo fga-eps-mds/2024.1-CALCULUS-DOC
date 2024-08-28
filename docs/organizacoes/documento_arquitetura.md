@@ -91,3 +91,4 @@ Autor: Calculus Team
 | 09/07/2024 | Criação do documento | Davi Matheus|
 | 10/07/2024 | Revisao | Natanael Filho |
 | 15/07/2024 | Adição do Diagrama de Arquitetura | Paulo Gontijo e João Bisinotti |
+| 28/08/2024 | Atualização do Diagrama de Arquitetura | João Bisinotti |
