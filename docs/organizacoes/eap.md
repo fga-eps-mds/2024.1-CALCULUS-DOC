@@ -21,13 +21,13 @@ Esta seção descreve as _user stories_ que serão entregues na primeira _releas
 Nesta seção são apresentadas as _user stories_ planejadas para a segunda _release_ do projeto. Essa fase busca aprimorar as funcionalidades entregues na Release 1 e no MVP, adicionando novos recursos e melhorias baseadas no feedback dos usuários e nas necessidades do negócio. A Release 2 visa consolidar o produto, garantindo a sua evolução contínua e a satisfação dos stakeholders.
 
 ## Release MVP
-Release MVP
 A Release MVP (Produto Mínimo Viável) é uma etapa crucial no ciclo de desenvolvimento do Calculus. Nesta fase, o foco é entregar um conjunto de funcionalidades essenciais que permitem ao usuário final começar a interagir com a plataforma de maneira significativa. A definição do MVP foi realizada em colaboração com o cliente, garantindo que os requisitos mais críticos fossem priorizados.
 
 Esta release inclui as user stories fundamentais que estabelecem a base para o funcionamento do sistema. As funcionalidades implementadas nesta etapa são suficientes para validar as principais hipóteses do produto, testar a aceitação pelo usuário e coletar feedbacks que orientarão futuras iterações. Entre os recursos planejados para o MVP, destacam-se:
 
-Autenticação de Usuários: Implementação de um sistema de registro e login seguro, garantindo que apenas usuários autenticados possam acessar a plataforma.
-Gestão de Conteúdo: Funcionalidades básicas para criação e organização de conteúdos pelos usuários, essencial para validar o core da plataforma.
+- Gestão e autenticação de Usuários: Implementação de um sistema de registro e login seguro, garantindo que apenas usuários autenticados possam acessar a plataforma.
+
+- Gestão de Conteúdo: Funcionalidades básicas para criação e organização de conteúdos pelos usuários, essencial para validar o core da plataforma.
 
 ## Resultado
 O diagrama abaixo ilustra os principais resultados obtidos até o momento, fornecendo uma visão consolidada dos avanços do projeto:
