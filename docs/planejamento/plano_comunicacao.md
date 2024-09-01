@@ -7,7 +7,9 @@ O objetivo deste documento é estabelecer diretrizes claras para a comunicação
 ## 2. Composição da Equipe
 
 - **Estudantes EPS:** 4
+    - Responsáveis pela liderança técnica e gestão do projeto.
 - **Estudantes MDS:** 7
+    - Responsáveis por desenvolver a aplicação e testes para a mesma.
 
 ## 3. Metodologias Adotadas
 
