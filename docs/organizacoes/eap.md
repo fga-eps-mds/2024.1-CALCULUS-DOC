@@ -1,7 +1,3 @@
-Aqui está o documento de Estrutura Analítica do Projeto (EAP) atualizado com a adição da seção para a Release 2:
-
----
-
 # Estrutura Analítica do Projeto
 
 ## Contexto
