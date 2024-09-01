@@ -1,57 +1,59 @@
+Aqui está o documento de arquitetura revisado com todas as alterações solicitadas:
+
+---
 
 # Documento de Arquitetura
 
 ## 1. Introdução
 
-Este documento tem como principal objetivo fornecer uma visão abrangente e estruturada da arquitetura do software Calculos. Utilizando diferentes visões arquiteturais, ele destaca diversos aspectos do sistema, proporcionando uma visão geral completa. A descrição abrange as principais decisões de design, componentes, módulos, interações e estrutura do software, facilitando assim o entendimento da arquitetura para os desenvolvedores.
+Este documento tem como objetivo principal fornecer uma visão abrangente e estruturada da arquitetura do software *Calculus*. Utilizando diferentes perspectivas arquiteturais, ele detalha diversos aspectos do sistema, incluindo decisões de design, componentes, módulos, interações e a estrutura geral do software. O intuito é facilitar o entendimento da arquitetura por parte dos desenvolvedores e demais stakeholders.
 
-### 1.1. Visão Geral
+### 1.1. Estrutura do Documento
 
-Este documento está estruturado da seguinte forma:
+Este documento está organizado da seguinte forma:
 
-- Introdução
-- Representação arquitetural
-- Visão Lógica
-- Referências bibliográficas
-- Histórico de versão
+- **Introdução**: Contextualiza o documento e descreve sua estrutura.
+- **Representação Arquitetural**: Apresenta os diagramas e conceitos-chave da arquitetura.
+- **Visão Lógica**: Descreve a organização dos componentes e a interação entre eles.
+- **Referências Bibliográficas**: Lista as fontes referenciadas no documento.
+- **Histórico de Versão**: Registra as alterações realizadas no documento ao longo do tempo.
 
 ## 2. Representação Arquitetural
 
 ### 2.1. Diagrama de Relações
 
 <iframe frameborder="0" style="width:100%;height:308px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=calculus-diagram.drawio&page-id=I-6fpici55m38HMQ_MQw#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1a0Ob_2W3N1eerm0drMZDin9y0jveMfpN%26export%3Ddownload"></iframe>
+**Autor:** Calculus Team
 
-O estilo arquitetural de microsserviços consiste em uma abordagem onde a aplicação é composta por serviços menores, implementados de forma independente e com baixo acoplamento. Esses serviços, organizados por recursos de negócios, comunicam-se entre si normalmente por meio de APIs.
+A arquitetura de microsserviços adotada no *Calculus* segue uma abordagem onde a aplicação é composta por serviços menores, implementados de forma independente e com baixo acoplamento. Esses serviços, organizados por domínios de negócios, comunicam-se entre si, principalmente por meio de APIs. Essa arquitetura promove um desenvolvimento mais ágil e facilita a escalabilidade da aplicação. Cada microsserviço possui sua própria base de dados independente, assegurando isolamento e robustez.
 
-A arquitetura de microsserviços acelera o desenvolvimento e facilita a escalabilidade da aplicação. Esse padrão será utilizado no Calculos, com cada microsserviço possuindo sua própria base de dados independente.
+### 2.2. Serviços
 
-### 2.2. Representação dos serviços
+#### 2.2.1. User Service
 
-#### 2.2.2. User Service
+O *User Service* é responsável pela gestão completa dos usuários da aplicação. Suas funcionalidades incluem registro, autenticação, atualização de informações, gerenciamento de permissões e controle de acesso, garantindo uma experiência segura e personalizada para cada usuário.
 
-O serviço de usuário é responsável pela gestão completa dos usuários da aplicação. Isso inclui o registro, autenticação, atualização de informações, gerenciamento de permissões e controle de acesso, garantindo uma experiência segura e personalizada para cada usuário.
+#### 2.2.2. Studio Maker Service
 
-#### 2.2.3. Application Service
-
-O serviço de aplicação é responsável por todas as funcionalidades referentes à experiência de todos os níveis de usuários autenticados no sistema.
+O *Studio Maker Service* é responsável pela criação e gestão de conteúdo na plataforma. Esse serviço lida com todas as funcionalidades necessárias para que os usuários autenticados possam criar, editar e organizar conteúdos de forma eficiente, permitindo uma gestão eficaz do material disponibilizado na plataforma.
 
 ### 2.3. Tecnologias
 
-#### 2.3.1. NextJS
+#### 2.3.1. Next.js
 
-O Next.js é um framework de desenvolvimento baseado em React que permite a criação de interfaces de usuário robustas e escaláveis. Ele facilita a renderização no servidor, a geração de páginas estáticas e a integração com APIs, proporcionando uma experiência de desenvolvimento otimizada. Com Next.js, é possível criar UIs complexas de forma eficiente, garantindo alta performance e SEO aprimorado. O Next.js será utilizado no front-end.
+O Next.js é um framework de desenvolvimento baseado em React, que permite a criação de interfaces de usuário robustas e escaláveis. Ele facilita a renderização no servidor, a geração de páginas estáticas e a integração com APIs, proporcionando uma experiência de desenvolvimento otimizada. O Next.js será utilizado no front-end do *Calculus*, garantindo alta performance e SEO aprimorado.
 
 #### 2.3.2. NestJS
 
-O NestJS é um framework de desenvolvimento baseado em Node.js que facilita a criação de aplicações escaláveis e eficientes. Ele utiliza uma arquitetura modular e orientada a objetos, permitindo a organização de código em módulos, controladores e serviços. Com suporte integrado para TypeScript, injeção de dependências e uma estrutura robusta para desenvolvimento de APIs e microsserviços, o NestJS é ideal para construir back-ends robustos e manuteníveis. O NestJS será utilizado no back-end.
+O NestJS é um framework de desenvolvimento baseado em Node.js, ideal para criar aplicações escaláveis e eficientes. Utilizando uma arquitetura modular e orientada a objetos, ele permite uma organização de código clara e manutenível. O NestJS será utilizado no back-end do *Calculus*, facilitando o desenvolvimento de APIs e microsserviços robustos.
 
 #### 2.3.3. MongoDB
 
-O MongoDB é um banco de dados NoSQL de código aberto reconhecido pela sua flexibilidade e escalabilidade. Ele é projetado para lidar com grandes volumes de dados de forma eficiente e oferece esquemas dinâmicos, permitindo a modelagem de dados de maneira mais livre em comparação com bancos de dados relacionais. O MongoDB suporta operações de leitura e gravação de alto desempenho, distribuição automática de dados e consultas complexas usando sua linguagem de consulta avançada. Será utilizado para gerenciar as bases de dados dos serviços da aplicação, proporcionando agilidade, escalabilidade e suporte para aplicações que demandam grande flexibilidade no armazenamento e recuperação de dados.
+O MongoDB é um banco de dados NoSQL, flexível e escalável, projetado para lidar com grandes volumes de dados de maneira eficiente. Ele será utilizado para gerenciar as bases de dados dos serviços da aplicação, proporcionando agilidade e suporte a aplicações que demandam grande flexibilidade no armazenamento e recuperação de dados.
 
 #### 2.3.4. Docker
 
-O Docker é uma plataforma de virtualização de contêineres que transformou a maneira como aplicações são desenvolvidas, empacotadas e implantadas. Ele proporciona aos desenvolvedores a capacidade de criar ambientes isolados e autossuficientes para suas aplicações, conhecidos como contêineres. Esses contêineres encapsulam não apenas o código da aplicação, mas também todas as dependências necessárias, como bibliotecas e configurações, garantindo consistência e portabilidade entre diferentes ambientes de desenvolvimento e produção.
+O Docker é uma plataforma de virtualização que permite criar ambientes isolados para aplicações, conhecidos como contêineres. Ele garante consistência e portabilidade entre diferentes ambientes, facilitando o desenvolvimento e a implantação do *Calculus*.
 
 ## 3. Visão Lógica
 
@@ -59,36 +61,43 @@ O Docker é uma plataforma de virtualização de contêineres que transformou a 
 
 #### 3.1.1 Introdução
 
-O Diagrama de Pacotes é uma representação estrutural usada para organizar as classes de um projeto em grupos lógicos chamados pacotes. Cada pacote agrupa elementos relacionados, como diagramas, classes e outros pacotes, oferecendo uma visão de alto nível especialmente útil em projetos e sistemas complexos.
-
-No nosso diagrama de pacotes, seguimos a arquitetura definida pelas diretrizes de microsserviços. O pacote principal representa o nosso sistema, dentro do qual encontramos a camada de front-end responsável por realizar requisições. Essas requisições são direcionadas para a camada de back-end, que por sua vez abriga nossos três microsserviços principais: UserService, JornadaService e GamificationService. Esses microsserviços interagem com o banco de dados para armazenamento e recuperação de dados.
-
-Ambos os Diagramas estão abaixo:
+O Diagrama de Pacotes organiza as classes do projeto em grupos lógicos chamados pacotes, oferecendo uma visão de alto nível especialmente útil em sistemas complexos. No *Calculus*, seguimos uma arquitetura de microsserviços, onde o pacote principal representa o sistema. Dentro dele, a camada de front-end realiza requisições que são processadas pela camada de back-end, composta pelos microsserviços principais: *User Service*, *Studio Maker Service* e *Gamification Service*, que interagem com os bancos de dados para armazenamento e recuperação de dados.
 
 <iframe frameborder="0" style="width:100%;height:553px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=calculus-diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1a0Ob_2W3N1eerm0drMZDin9y0jveMfpN%26export%3Ddownload"></iframe>
 
+
+**Autor:** *Calculus* Team
+
 ### 3.2. Diagrama de Implantação
+
+O Diagrama de Implantação oferece uma visão detalhada de como os componentes do sistema *Calculus* estão distribuídos em diferentes máquinas ou servidores dentro da infraestrutura de TI. Ele demonstra como os serviços são implantados em contêineres, como a comunicação ocorre entre eles e como os dados são armazenados e acessados.
+
+No *Calculus*, a implantação é realizada com o auxílio de contêineres Docker, orquestrados pelo Kubernetes. Esta abordagem garante que cada serviço, como o *User Service* e o *Studio Maker Service*, possa ser escalado de forma independente, mantendo a alta disponibilidade e eficiência operacional. Além disso, o Kubernetes gerencia a distribuição de cargas de trabalho e proporciona resiliência, assegurando que os serviços permaneçam acessíveis mesmo em caso de falhas.
 
 <iframe frameborder="0" style="width:100%;height:513px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=calculus-diagram.drawio&page-id=nR3126rXf9x62OpuHPoS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1a0Ob_2W3N1eerm0drMZDin9y0jveMfpN%26export%3Ddownload"></iframe>
 
-### 3.3 Diagrama de Arquitetura
-A estrutura do projeto, planejada para seguir uma arquitetura de microsserviços, possui componentes chave para que seu ecossistema funcione corretamente. Dentre eles, está o papel fundamental da API Gateway bem como a individualização dos bancos de dados NoSQL, para trazer mais robustez e organização. Abaixo segue o artefato criado com o intuito de dar uma visão em baixo nível da arquitetura e seus componentes:
 
-![Arquitetura](../assets/diagrama_arquitetura.png)
+**Autor:** *Calculus* Team
 
-Nome: Diagrama de Arquitetura
+### 3.3. Diagrama de Arquitetura
+O Diagrama de Arquitetura mostra a estrutura planejada do projeto Calculus, enfatizando a arquitetura de microsserviços. Ele destaca a individualização dos bancos de dados NoSQL para cada serviço, o que garante maior robustez e organização. Cada microsserviço opera de forma independente, permitindo escalabilidade e flexibilidade no desenvolvimento e na manutenção do sistema. A comunicação entre os microsserviços ocorre diretamente, sem a necessidade de um ponto de entrada centralizado.
 
-Autor: Calculus Team
+<iframe style="border:none" width="1600" height="900" src="https://whimsical.com/embed/DPq1eFQn1xkJjiRNhKL4N7"></iframe>
 
-## 4. Referencências bibliográficas
+ 
+**Autor:** *Calculus* Team
 
-> [1] EQUIPE ALECTRION 2022-2. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2022-2-Alectrion-DOC/#/./Documentos/arquitetura.
+## 4. Referências Bibliográficas
+
+> [1] EQUIPE ALECTRION 2022-2. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2022-2-Alectrion-DOC/#/./Documentos/arquitetura.  
 > [2] SOARES, João Pedro; ESTANISLAU, Matheus. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2022-1-Alectrion-DOC/documentation/Documentos/documento-arquitetura.html.
-## 5. Histórico de versão
 
-|**Data**|**Descrição**|**Autore(es)**|
+## 5. Histórico de Versão
+
+|**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 | 09/07/2024 | Criação do documento | Davi Matheus|
-| 10/07/2024 | Revisao | Natanael Filho |
-| 15/07/2024 | Adição do Diagrama de Arquitetura | Paulo Gontijo e João Bisinotti |
+| 10/07/2024 | Revisão | Natanael Filho |
+| 15/07/2024 | Adição do Diagrama de Arquitetura | Paulo Gontijo, João Bisinotti |
 | 28/08/2024 | Atualização do Diagrama de Arquitetura | João Bisinotti |
+| 01/09/2024 | Atualização geral do documento | Paulo Gontijo |
