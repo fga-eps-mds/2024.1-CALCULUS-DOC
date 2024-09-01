@@ -48,6 +48,7 @@ nav:
     - Documento de Arquitetura: 'organizacoes/documento_arquitetura.md'
     - Estrutura Analítica do Projeto: 'organizacoes/eap.md'
     - Visão de Dados: 'organizacoes/visao-de-dados.md'
+    - Visão de Endpoints: 'organizacoes/visao-de-endpoints.md'
   - Gestão do Projeto: 
     - Quadro de Disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
     - Quadro de Conhecimento e Pareamento: 'planejamento/conhecimento_pareamento.md'
