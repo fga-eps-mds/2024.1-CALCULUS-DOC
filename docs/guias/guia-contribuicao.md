@@ -1,7 +1,3 @@
-Aqui estão os títulos e subtítulos do documento reescritos com numeração de sumário:
-
----
-
 # 1. Git Flow
 
 Este documento tem o objetivo de consolidar padrões de uso do Git no desenvolvimento de nossa aplicação.
@@ -192,10 +188,6 @@ Como professor, eu quero criar uma nova jornada educacional para organizar meus 
 ```
 
 ***
-
-Aqui está a seção de Pull Request reescrita com base no template fornecido:
-
----
 
 ### 1.6.2. Pull Request Template
 
