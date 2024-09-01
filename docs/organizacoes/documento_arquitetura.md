@@ -1,7 +1,3 @@
-Aqui está o documento de arquitetura revisado com todas as alterações solicitadas:
-
----
-
 # Documento de Arquitetura
 
 ## 1. Introdução
