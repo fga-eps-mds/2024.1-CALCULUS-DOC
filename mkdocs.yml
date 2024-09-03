@@ -33,31 +33,6 @@ extra_css:
 
 nav:
   - Sobre: 'index.md'
-  - Organizações do Projeto: 
-    - Termo de Abertura do Projeto: 'organizacoes/tap.md'
-    - Documento de Arquitetura: 'organizacoes/documento_arquitetura.md'
-    - Estrutura Analítica do Projeto: 'organizacoes/eap.md'
-  - Planejamentos: 
-    - Quadro de disponibilidade: 'planejamento/quadro_de_disponibilidade.md'
-    - Quadro de conhecimento e pareamento: 'planejamento/conhecimento_pareamento.md'
-    - Agenda e Ritual da Equipe: 'planejamento/agenda_ritual.md'
-    - Planejamento de Comunicação: 'planejamento/comunicacao.md'
-  - Guias:
-    - Guia de contribuição: 'guias/guia-contribuicao.md'
-    - Código de conduta: 'guias/codigo-conduta.md'
-    - Guia de estilo: 'guias/guia-estilo.md'
-  - Planos:
-    - Analise de Riscos: 'planos/planos_riscos.md'
-    - Plano de qualidade: 'planos/plano_qualidade.md'
-    - Plano de custos: 'planos/planos_custos.md'
-  - Atas de Reunião:
-    - Reunião 1 - 25/03: 'atas/reuniao1.md'
-    - Reunião 2 - 01/04: 'atas/reuniao2.md'
-    - Reunião 3 - 03/04: 'atas/reuniao3.md'
-  - Dojo:
-    - Dojo Markdown: 'dojo/dojo-markdown.md'
-    - Dojo Git: 'dojo/dojo-git.md'
-    - Dojo Docker: 'dojo/dojo-docker.md'
   - Lean Inception:
     - Visão do Produto: 'lean/visao_produto.md'
     - É - Não É - Faz - Não Faz: 'lean/faz_nao_faz.md'
@@ -68,3 +43,24 @@ nav:
     - Personas: 'lean/personas.md'
     - Brainstorm: 'lean/brainstorms_funcionalidades.md'
     - Canvas MVP: 'lean/canvas_mvp.md'
+  - Documentação Técnica: 
+    - Termo de Abertura do Projeto: 'organizacoes/tap.md'
+    - Documento de Arquitetura: 'organizacoes/documento_arquitetura.md'
+    - Estrutura Analítica do Projeto: 'organizacoes/eap.md'
+    - Visão de Dados: 'organizacoes/visao-de-dados.md'
+    - Visão de Endpoints: 'organizacoes/visao-de-endpoints.md'
+  - Gestão do Projeto: 
+    - Plano de Comunicação: 'planejamento/plano_comunicacao.md'
+    - Plano de Qualidade: 'planos/plano_qualidade.md'
+    - Plano de Custos: 'planos/planos_custos.md'
+    - Analise de Riscos: 'planos/planos_riscos.md'
+    - Quadro de Conhecimento e Pareamento: 'planejamento/conhecimento_pareamento.md'
+  - Guias:
+    - Guia de Contribuição: 'guias/guia-contribuicao.md'
+    - Guia de Estilo: 'guias/guia-estilo.md'
+    - Código de Conduta: 'guias/codigo-conduta.md'
+  - Dojos:
+    - Dojo Markdown: 'dojo/dojo-markdown.md'
+    - Dojo Git: 'dojo/dojo-git.md'
+    - Dojo Docker: 'dojo/dojo-docker.md'
+
