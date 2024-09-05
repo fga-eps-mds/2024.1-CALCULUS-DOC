@@ -19,6 +19,8 @@ O modelo conceitual do *Calculus* reflete a estrutura de dados fundamental que c
 
 - **Conteúdo**: O nível mais granular, criado e gerido por professores, e consumido por alunos. Cada conteúdo pertence a uma trilha.
 
+- **Pontos de Partida**: Um startpoint (ou "ponto de partida") pode ser definido como um marco inicial no aprendizado. Sua estrutura é tal que contém jornadas que contemplam o mesmo campo de estudo. 
+
 <center>
 
 ```mermaid
@@ -47,6 +49,11 @@ erDiagram
         string trilhaId
         string professorId
     }
+    PontosDePartida {
+        string id
+        string name
+        string description
+    }
 
     Usuario ||--o{ Jornada : "inscreve-se"
     Jornada ||--o{ Trilha : "composta por"
@@ -54,6 +61,7 @@ erDiagram
     Usuario ||--o{ Conteudo : "cria/edita/visualiza"
     Usuario ||--o{ Jornada : "cria/edita/visualiza"
     Usuario ||--o{ Trilha : "cria/edita/visualiza"
+    PontosDePartida || --o{ Jornada : "contém"
 ```
 **Autor:** Calculus Team
 </center>
@@ -64,7 +72,7 @@ erDiagram
 
 - **Jornada** é composta por várias **Trilhas**, que por sua vez contêm **Conteúdos**.
 - **Usuários** desempenham diferentes funções (**Aluno**, **Professor**, **Administrador**), e suas interações com a plataforma são mediadas por suas permissões:
-  - **Alunos** podem se inscrever em **Jornadas** e acessar os conteúdos dentro delas.
+  - **Alunos** podem se inscrever em **Jornadas** e acessar todas as **Trilhas** dentro delas.
   - **Professores** criam e gerenciam **Conteúdos** dentro das **Trilhas** e **Jornadas** às quais estão associados.
 
 ### 2.2. Modelo Lógico
@@ -103,6 +111,11 @@ classDiagram
         +String trilhaId FK
         +String professorId FK
     }
+    class PontosDePartida {
+        +String id PK
+        +String name
+        +String description
+    }
 
 
     Usuario "1" --> "0..*" Jornada : se inscreve
@@ -111,6 +124,7 @@ classDiagram
     Usuario "1" --> "0..*" Conteudo : cria/edita/visualiza
     Usuario "1" --> "0..*" Trilha : cria/edita/visualiza
     Usuario "1" --> "0..*" Jornada : cria/edita/visualiza
+    PontosDePartida "1" --> "0..*" Jornada : "contém"
 ```
 **Autor:** Calculus Team
 </center>
@@ -123,56 +137,91 @@ classDiagram
 
 ### 2.3. Modelo Físico
 
-O modelo físico traduz a lógica dos dados para a implementação real no banco de dados, definindo tabelas, colunas, tipos de dados, e relacionamentos.
+O modelo físico traduz a lógica dos dados para a implementação real no banco de dados. Aplicado ao projeto do _Calculus_, a realidade é de uma modelagem não relacional, portanto trabalha-se com [Databases -> Collections -> Documents]. No diagrama abaixo pode-se visualizar a organização das nossas collections com o schema de um documento genérico:
 
 <center>
 
 ```mermaid
 classDiagram
-    class tb_users {
+    class users {
         +String id PK
-        +String nome
+        +String name
         +String email UNIQUE
-        +String senha
+        +String username UNIQUE
+        +String password
+        +String verificationToken
+        +Boolean isVerified
         +String role
+        +ObjectId[] points FK
+        +ObjectId[] subscribedJourneys FK
+        +ObjectId[] completedTrails FK
+        +Date createdAt
+        +Date updatedAt
     }
 
-    class tb_journeys {
+
+    class journeys {
         +String id PK
-        +String titulo
-        +String descricao
+        +String title
+        +String description
+        +ObjectId point FK
+        +ObjectId[] trails FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
     }
 
-    class tb_trails {
+    class trails {
         +String id PK
-        +String titulo
-        +String descricao
-        +String jornada_id FK
+        +String name
+        +ObjectId journey FK
+        +ObjectId[] contents FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
     }
 
-    class tb_contents {
+    class contents {
         +String id PK
-        +String titulo
-        +String descricao
-        +String trilha_id FK
-        +String professor_id FK
+        +String title
+        +String content
+        +ObjectId trail FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
+    }
+
+    class startpoints {
+        +String id PK
+        +String name
+        +String description
+        +ObjectId user FK
+        +ObjectId[] journeys FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
     }
 
 
-    tb_users "1" --> "0..*" tb_journeys : se inscreve
-    tb_journeys "1" --> "0..*" tb_trails : contém
-    tb_trails "1" --> "0..*" tb_contents : agrupa
-    tb_users "1" --> "0..*" tb_contents : cria/edita
-    tb_users "1" --> "0..*" tb_journeys : cria/edita
-    tb_users "1" --> "0..*" tb_trails : cria/edita
+    users "1" --> "0..*" journeys : se inscreve
+    journeys "1" --> "0..*" trails : contém
+    trails "1" --> "0..*" contents : agrupa
+    users "1" --> "0..*" contents : cria/edita
+    users "1" --> "0..*" journeys : cria/edita
+    users "1" --> "0..*" trails : cria/edita
+    startpoints "1" --> "0..*"  journeys: contém
+
 ```
+
+> *OBS.: É importante ressaltar que cada Database refere-se a um ambiente (DEV, QAS e PRD).
+
 **Autor:** Calculus Team
 </center>
 
 #### Descrição
 
-- **tb_users**: Armazena informações de login e funções dos usuários na plataforma.
-- **tb_journeys**, **tb_trails**, **tb_contents**: Tabelas que estruturam a hierarquia de conteúdos educacionais.
+- **users**: Armazena informações de login e funções dos usuários na plataforma.
+- **journeys**, **trails**, **contents**: Tabelas que estruturam a hierarquia de conteúdos educacionais.
 
 
 ***
@@ -215,14 +264,15 @@ flowchart TD
 </center>
 
 - **UserService** interage com as collections **users**, **refreshtokens**, e **resettokens**:
-  - **users**: Armazena informações de usuários, como credenciais e perfis.
-  - **refreshtokens**: Gera e armazena tokens usados para manter a sessão do usuário.
-  - **resettokens**: Armazena tokens temporários para redefinição de senhas.
+    - **users**: Armazena informações de usuários, como credenciais e perfis.
+    - **refreshtokens**: Gera e armazena tokens usados para manter a sessão do usuário.
+    - **resettokens**: Armazena tokens temporários para redefinição de senhas.
+
 - **StudioMakerService** interage com as collections **contents**, **journeys**, **trails**, e **startpoints**:
-  - **contents**: Armazena os materiais educacionais criados pelos professores.
-  - **journeys**: Armazena informações sobre jornadas, que agrupam trilhas educacionais.
-  - **trails**: Armazena trilhas, que são compostas por conteúdos.
-  - **startpoints**: Registra pontos de partida ou progresso em trilhas e jornadas.
+    - **contents**: Armazena os materiais educacionais criados pelos professores.
+    - **journeys**: Armazena informações sobre jornadas, que agrupam trilhas educacionais.
+    - **trails**: Armazena trilhas, que são compostas por conteúdos.
+    - **startpoints**: Registra pontos de partida ou progresso em trilhas e jornadas.
 
 ### 3.2. Fontes de Dados
 
@@ -238,16 +288,16 @@ Cada serviço possui suas próprias collections no MongoDB, organizando os dados
 O armazenamento dos dados no *Calculus* é realizado por meio de collections específicas em instâncias de MongoDB Atlas. Cada serviço possui suas próprias collections dedicadas para manter os dados organizados e seguros.
 
 #### Estrutura de Armazenamento:
-- **UserDB (MongoDB Atlas)**: Armazena dados relacionados a usuários e autenticação.
-  - **users**: Dados do usuário, como credenciais e roles.
-  - **refreshtokens**: Tokens de sessão do usuário.
-  - **resettokens**: Tokens para redefinição de senhas.
+- **UserService**: Armazena dados relacionados a usuários e autenticação.
+    - **users**: Dados do usuário, como credenciais e roles.
+    - **refreshtokens**: Tokens de sessão do usuário.
+    - **resettokens**: Tokens para redefinição de senhas.
   
-- **ContentDB (MongoDB Atlas)**: Armazena dados relacionados a conteúdos educacionais.
-  - **contents**: Materiais educacionais criados pelos professores.
-  - **journeys**: Estrutura de jornadas que agrupam trilhas.
-  - **trails**: Conjunto de trilhas associadas às jornadas.
-  - **startpoints**: Marca o progresso ou o início em trilhas e jornadas.
+- **StudioMakerService**: Armazena dados relacionados a conteúdos educacionais.
+    - **contents**: Materiais educacionais criados pelos professores.
+    - **journeys**: Estrutura de jornadas que agrupam trilhas.
+    - **trails**: Conjunto de trilhas associadas às jornadas.
+    - **startpoints**: Marca o progresso ou o início em trilhas e jornadas.
 
 Abaixo segue um diagrama que resume o conceito apresentado visualmente:
 
@@ -260,8 +310,7 @@ flowchart TD
         E[(refreshtokens)] --> B
         F[(resettokens)] --> B
         
-        G[(contents)] --> C[StudioMakerService]
-        H[(journeys)] --> C
+        H[(journeys)] --> C[StudioMakerService]
         I[(trails)] --> C
         J[(startpoints)] --> C
     end
@@ -270,7 +319,6 @@ flowchart TD
     B -.->|Leitura e Escrita| E
     B -.->|Leitura e Escrita| F
     
-    C -.->|Leitura e Escrita| G
     C -.->|Leitura e Escrita| H
     C -.->|Leitura e Escrita| I
     C -.->|Leitura e Escrita| J
@@ -280,7 +328,6 @@ flowchart TD
 </center>
 
 - Cada serviço (UserService, StudioMakerService) está conectado às suas respectivas collections no MongoDB Atlas.
-- **UserDB** e **ContentDB**: Cada um possui suas collections específicas, garantindo organização, segurança e eficiência no gerenciamento dos dados.
 
 Considerações de Armazenamento:
 
@@ -298,7 +345,7 @@ A governança de dados no *Calculus* é fundamental para garantir que todas as i
 As políticas de segurança do *Calculus* são desenhadas para proteger os dados contra acessos não autorizados, garantir a integridade das informações e assegurar a disponibilidade dos dados para os usuários legítimos.
 
 - **Autenticação e Autorização**: Todos os acessos à aplicação são controlados por um sistema robusto de autenticação e autorização. Os usuários devem se autenticar via credenciais seguras, e os tokens de sessão são gerenciados através das collections **refreshtokens** e **resettokens** no MongoDB.
-- **Criptografia**: Dados sensíveis, como senhas de usuário e tokens de autenticação, são criptografados tanto em trânsito quanto em repouso. A comunicação entre o frontend e o backend é realizada via HTTPS para garantir a proteção dos dados em trânsito.
+- **Criptografia**: Dados sensíveis, como senhas de usuário e tokens de autenticação, são criptografados  em repouso (armazenamento).
 - **Backup e Recuperação**: Rotinas de backup são implementadas para garantir que os dados possam ser recuperados em caso de falha. O MongoDB Atlas oferece recursos avançados de backup e recuperação de desastres.
 
 <center>
@@ -331,32 +378,15 @@ flowchart TD
 **Autor:** Calculus Team
 </center>
 
-### 4.3. Conformidade e Regulamentação
-
-O *Calculus* está comprometido em cumprir todas as leis e regulamentações aplicáveis relacionadas à proteção de dados e privacidade. As práticas descritas abaixo garantem que a aplicação esteja em conformidade com normas como a GDPR (General Data Protection Regulation) e a LGPD (Lei Geral de Proteção de Dados).
-
-- **Anonimização e Pseudonimização**: Dados pessoais dos usuários, quando não necessários para a operação direta do sistema, são anonimizados ou pseudonimizados para proteger a privacidade dos usuários.
-- **Gestão de Consentimento**: Os usuários são informados sobre como seus dados serão usados e devem fornecer consentimento explícito para o processamento de suas informações. As preferências de consentimento são gerenciadas e registradas no sistema.
-- **Direitos dos Usuários**: Os usuários têm o direito de acessar, corrigir, ou excluir seus dados pessoais conforme as leis aplicáveis. O sistema implementa mecanismos para que esses direitos possam ser exercidos de maneira simples e eficaz.
-
-<center>
-```mermaid
-flowchart TD
-    A[Coleta de Dados] --> B[Anonimizacao]
-    B --> C[Armazenamento de Dados]
-    C --> D[Revisao de Conformidade]
-```
-**Autor:** Calculus Team
-</center>
-
-## 6. Revisão Bibliográfica
+## 5. Revisão Bibliográfica
 
 > Inmon, W. H., Strauss, D., & Neushloss, G. (2010). *DW 2.0: The Architecture for the Next Generation of Data Warehousing*. Morgan Kaufmann.
 
 > ISO/IEC 27001 (2013). *Information technology — Security techniques — Information security management systems — Requirements*.
 
-## 7. Histórico de Versão
+## 6. Histórico de Versão
 
 | Data       | Versão | Descrição                               | Autor(es)                            |
 |------------|--------|-----------------------------------------|--------------------------------------|
 | 01/09/2024 | 1.0    | Criação do documento                    | Paulo Gontijo                        |
+| 05/09/2024 | 1.1    | Ajustes de texto e diagramas                    | Paulo Gontijo, João Bisinotti                        |
