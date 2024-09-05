@@ -11,13 +11,30 @@ O **UserService** é responsável pela gestão e autenticação dos usuários na
 
 ### 2.1. Endpoints
 
-| Método | Rota                  | Descrição                                           |
-|--------|-----------------------|-----------------------------------------------------|
-| POST   | `/api/v1/users/register` | Registro de novos usuários na plataforma            |
-| POST   | `/api/v1/users/login`    | Autenticação de usuários                            |
-| POST   | `/api/v1/users/token`    | Geração de novos tokens de acesso                   |
-| POST   | `/api/v1/users/reset`    | Solicitação de redefinição de senha                 |
-| GET    | `/api/v1/users/me`       | Recupera as informações do usuário autenticado      |
+| Método | Rota                                     | Descrição                                                      |
+|--------|------------------------------------------|----------------------------------------------------------------|
+| POST   | `/api/v1/users`                          | Criação de um novo usuário                                      |
+| GET    | `/api/v1/users/verify`                   | Verificação de conta de usuário por token                       |
+| GET    | `/api/v1/users/:userId/subscribedJourneys` | Recupera as jornadas inscritas do usuário                       |
+| GET    | `/api/v1/users`                          | Lista todos os usuários                                         |
+| PATCH  | `/api/v1/users/:id/add-point`            | Adiciona um ponto ao usuário                                    |
+| POST   | `/api/v1/users/:userId/subscribe/:journeyId` | Inscreve o usuário em uma jornada                              |
+| DELETE | `/api/v1/users/:userId/unsubscribe/:journeyId` | Remove o usuário de uma jornada                                |
+| POST   | `/api/v1/users/:userId/complete/:trailId` | Marca uma trilha como completa para o usuário                   |
+| GET    | `/api/v1/users/:userId/completedTrails`   | Recupera as trilhas completadas do usuário                      |
+| GET    | `/api/v1/users/:id`                      | Recupera informações de um usuário específico                   |
+| DELETE | `/api/v1/users/:id`                      | Deleta um usuário específico                                    |
+| PATCH  | `/api/v1/users/:id/role`                 | Atualiza o papel de um usuário (requer permissão de administrador) |
+| POST   | `/api/v1/auth/login`                     | Autenticação de usuário (login)                                 |
+| GET    | `/api/v1/auth/google`                    | Inicia autenticação com Google                                  |
+| GET    | `/api/v1/auth/google/callback`           | Callback da autenticação com Google                             |
+| GET    | `/api/v1/auth/microsoft`                 | Inicia autenticação com Microsoft                               |
+| GET    | `/api/v1/auth/microsoft/callback`        | Callback da autenticação com Microsoft                          |
+| GET    | `/api/v1/auth/validate-token`            | Valida um token de acesso                                       |
+| POST   | `/api/v1/auth/refresh`                   | Geração de um novo token de acesso através de um refresh token  |
+| PUT    | `/api/v1/auth/change-password`           | Troca a senha do usuário autenticado                            |
+| POST   | `/api/v1/auth/forgot-password`           | Solicita redefinição de senha                                   |
+| PUT    | `/api/v1/auth/reset-password`            | Reseta a senha do usuário                                       |
 
 ### 2.2. Configuração de Porta
 
@@ -35,27 +52,41 @@ O **StudioMakerService** é responsável pela criação, edição e gestão dos 
 
 ### 3.1. Endpoints
 
-| Método | Rota                               | Descrição                                                      |
-|--------|------------------------------------|----------------------------------------------------------------|
-| POST   | `/api/v1/contents`                 | Criação de novos conteúdos                                     |
-| GET    | `/api/v1/contents/:id`             | Recupera um conteúdo específico pelo ID                        |
-| PUT    | `/api/v1/contents/:id`             | Atualiza um conteúdo existente                                 |
-| DELETE | `/api/v1/contents/:id`             | Remove um conteúdo existente                                   |
-| GET    | `/api/v1/journeys`                 | Recupera todas as jornadas                                     |
-| POST   | `/api/v1/journeys`                 | Criação de novas jornadas                                      |
-| GET    | `/api/v1/journeys/:id`             | Recupera uma jornada específica pelo ID                        |
-| PUT    | `/api/v1/journeys/:id`             | Atualiza uma jornada existente                                 |
-| DELETE | `/api/v1/journeys/:id`             | Remove uma jornada existente                                   |
-| GET    | `/api/v1/trails`                   | Recupera todas as trilhas                                      |
-| POST   | `/api/v1/trails`                   | Criação de novas trilhas                                       |
-| GET    | `/api/v1/trails/:id`               | Recupera uma trilha específica pelo ID                         |
-| PUT    | `/api/v1/trails/:id`               | Atualiza uma trilha existente                                  |
-| DELETE | `/api/v1/trails/:id`               | Remove uma trilha existente                                    |
-| GET    | `/api/v1/startpoints`              | Recupera todos os pontos de partida                            |
-| POST   | `/api/v1/startpoints`              | Criação de novos pontos de partida                             |
-| GET    | `/api/v1/startpoints/:id`          | Recupera um ponto de partida específico pelo ID                |
-| PUT    | `/api/v1/startpoints/:id`          | Atualiza um ponto de partida existente                         |
-| DELETE | `/api/v1/startpoints/:id`          | Remove um ponto de partida existente                           |
+| Método | Rota                                     | Descrição                                                        |
+|--------|------------------------------------------|------------------------------------------------------------------|
+| POST   | `/api/v1/contents`                       | Criação de um novo conteúdo                                      |
+| GET    | `/api/v1/contents/:id`                   | Recupera um conteúdo pelo ID                                     |
+| GET    | `/api/v1/contents`                       | Lista todos os conteúdos                                         |
+| GET    | `/api/v1/contents/trail/:id`             | Recupera todos os conteúdos de uma trilha                        |
+| PATCH  | `/api/v1/contents/:id`                   | Atualiza um conteúdo pelo ID                                     |
+| DELETE | `/api/v1/contents/:id`                   | Exclui um conteúdo pelo ID                                       |
+| PATCH  | `/api/v1/contents/order/update-order`    | Atualiza a ordem dos conteúdos                                   |
+| POST   | `/api/v1/trails`                         | Criação de uma nova trilha                                       |
+| GET    | `/api/v1/trails/:id`                     | Recupera uma trilha pelo ID                                      |
+| GET    | `/api/v1/trails`                         | Lista todas as trilhas                                           |
+| GET    | `/api/v1/trails/journey/:id`             | Recupera todas as trilhas de uma jornada                         |
+| PUT    | `/api/v1/trails/:id`                     | Atualiza uma trilha pelo ID                                      |
+| PUT    | `/api/v1/trails/:id/addContent`          | Adiciona um conteúdo a uma trilha                                |
+| PUT    | `/api/v1/trails/:id/removeContent`       | Remove um conteúdo de uma trilha                                 |
+| DELETE | `/api/v1/trails/:id`                     | Exclui uma trilha pelo ID                                        |
+| PATCH  | `/api/v1/trails/update-trail-order`      | Atualiza a ordem das trilhas                                     |
+| POST   | `/api/v1/journeys`                       | Criação de uma nova jornada                                      |
+| GET    | `/api/v1/journeys`                       | Lista todas as jornadas                                          |
+| GET    | `/api/v1/journeys/point/:id`             | Recupera as jornadas associadas a um ponto                       |
+| GET    | `/api/v1/journeys/:id`                   | Recupera uma jornada pelo ID                                     |
+| PUT    | `/api/v1/journeys/:id`                   | Atualiza uma jornada pelo ID                                     |
+| DELETE | `/api/v1/journeys/:id`                   | Exclui uma jornada pelo ID                                       |
+| PATCH  | `/api/v1/journeys/:id/add-trail`         | Adiciona uma trilha a uma jornada                                |
+| PATCH  | `/api/v1/journeys/update-journeys-order` | Atualiza a ordem das jornadas                                    |
+| POST   | `/api/v1/points`                         | Criação de um novo ponto                                         |
+| GET    | `/api/v1/points`                         | Lista todos os pontos                                            |
+| GET    | `/api/v1/points/user/:id`                | Recupera os pontos associados a um usuário                       |
+| GET    | `/api/v1/points/:id`                     | Recupera um ponto pelo ID                                        |
+| PUT    | `/api/v1/points/:id`                     | Atualiza um ponto pelo ID                                        |
+| DELETE | `/api/v1/points/:id`                     | Exclui um ponto pelo ID                                          |
+| PATCH  | `/api/v1/points/:id/add-journey`         | Adiciona uma jornada a um ponto                                  |
+| GET    | `/api/v1/points/:pointId/journeys`       | Recupera as jornadas associadas a um ponto                       |
+| PATCH  | `/api/v1/points/update-point-order`      | Atualiza a ordem dos pontos                                      |
 
 ### 3.2. Configuração de Porta
 
@@ -70,25 +101,7 @@ Port: 3002
 
 O **Frontend** da aplicação *Calculus* é responsável por fornecer a interface com a qual os usuários interagem. Ele se comunica com os serviços backend (**UserService** e **StudioMakerService**) para fornecer funcionalidades como autenticação, visualização e gestão de conteúdos educacionais. Esta seção descreve as rotas principais do frontend e a configuração da porta onde ele é servido.
 
-### 4.1. Rotas
-
-O **Frontend** utiliza várias rotas para organizar as diferentes páginas e funcionalidades acessíveis aos usuários:
-
-| Rota                    | Descrição                                                                 |
-|-------------------------|---------------------------------------------------------------------------|
-| `/`                     | Página inicial da aplicação                                               |
-| `/login`                | Página de login para autenticação de usuários                             |
-| `/register`             | Página de registro para novos usuários                                    |
-| `/dashboard`            | Dashboard do usuário autenticado                                          |
-| `/contents`             | Página para visualização e gestão dos conteúdos                           |
-| `/journeys`             | Página para visualização e gestão de jornadas                             |
-| `/trails`               | Página para visualização e gestão de trilhas                              |
-| `/contents/:id`         | Página para visualização detalhada de um conteúdo específico              |
-| `/journeys/:id`         | Página para visualização detalhada de uma jornada específica              |
-| `/trails/:id`           | Página para visualização detalhada de uma trilha específica               |
-| `/profile`              | Página de perfil do usuário, para visualização e edição das informações pessoais |
-
-### 4.2. Configuração de Porta
+### 4.1. Configuração de Porta
 
 O **Frontend** da aplicação é servido na porta **4000**. Os usuários acessam a interface do *Calculus* através desta porta.
 
@@ -97,7 +110,7 @@ Host: calculus-dev.eastus2.cloudapp.azure.com
 Port: 4000
 ```
 
-### 4.3. Comunicação com Backend
+### 4.2. Comunicação com Backend
 
 O **Frontend** se comunica com os serviços backend (**UserService** e **StudioMakerService**) através de chamadas HTTP/HTTPS. Todas as interações, como autenticação e gerenciamento de conteúdos, são realizadas via APIs RESTful fornecidas pelos serviços backend.
 
@@ -121,3 +134,4 @@ Todos os endpoints expostos pelos serviços do *Calculus* são protegidos por me
 | Data       | Versão | Descrição                               | Autor(es)                             |
 |------------|--------|-----------------------------------------|---------------------------------------|
 | 01/09/2024 | 1.0    | Criação do documento                    | Paulo Gontijo                         |
+| 05/09/2024 | 1.1    | Adicionando mais endpoints                    | Paulo Gontijo                         |
