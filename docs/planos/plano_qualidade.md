@@ -74,7 +74,7 @@ As métricas definidas para monitorar a qualidade do projeto, conforme o modelo 
 
 Para cada métrica, foram definidos valores de referência que servirão como indicadores de qualidade e auxiliarão na tomada de decisões:
 
-- **Coverage:** 90% de cobertura mínima das linhas de código.
+- **Coverage:** 80% de cobertura mínima das linhas de código.
 - **Duplications:** Menos de 0% de duplicação de código.
 - **Complexity:** Manter a complexidade ciclomática abaixo de 10 por método/função.
 
