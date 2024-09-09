@@ -79,7 +79,7 @@ Todas as funcionalidades planejadas foram entregues e validadas pelo Product Own
 ## 6. Oportunidades de Melhoria
 
 1. **Escopo de Testes:**  
-   Mais atenção poderia ser dada ao planejamento de testes, especialmente testes automatizados, para garantir maior qualidade e evitar problemas na fase de deploy.
+   Mais atenção poderia ser dada ao planejamento de testes, especialmente testes de usabilidade, para garantir maior qualidade do produto e satisfação do usuário.
 
 2. **Orçamento para o Deploy:**  
    Uma estratégia de deploy mais robusta poderia ser implementada caso houvesse um orçamento alocado para essa parte do projeto, o que tornaria o processo mais eficiente.
