@@ -1,0 +1,2091 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../planejamento/conhecimento_pareamento/">
+      
+      
+        <link rel="next" href="../guia-estilo/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Guia de Contribuição - 2024.1 - CALCULUS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-git-flow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="2024.1 - CALCULUS" class="md-header__button md-logo" aria-label="2024.1 - CALCULUS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            2024.1 - CALCULUS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guia de Contribuição
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1 - CALCULUS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="2024.1 - CALCULUS" class="md-nav__button md-logo" aria-label="2024.1 - CALCULUS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    2024.1 - CALCULUS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1 - CALCULUS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lean Inception
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/visao_produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/faz_nao_faz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    É - Não É - Faz - Não Faz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/objetivos_produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Objetivos do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/jornada_usu%C3%A1rio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jornada
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/revisao_tecnica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Revisão Técnica, de Negócio e de UX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/sequenciador/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequenciador
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/personas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/brainstorms_funcionalidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/canvas_mvp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canvas MVP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação Técnica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação Técnica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/tap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Abertura do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/documento_arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estrutura Analítica do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/visao-de-dados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/visao-de-endpoints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão de Endpoints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/manual_de_instru%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual de Instruções
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gestão do Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Gestão do Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/plano_comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planos/plano_qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planos/planos_custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizacoes/EVM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planos/planos_riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analise de Riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/conhecimento_pareamento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadro de Conhecimento e Pareamento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guia de Contribuição
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Contribuição
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-motivacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Motivação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-politicas-de-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Políticas de Contribuição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Políticas de Contribuição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-idioma" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.1. Idioma
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-etica" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.2. Ética
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Branches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-fluxo-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.1. Fluxo de Branches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3.1. Fluxo de Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1311-exemplo-do-fluxo-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.1.1. Exemplo do Fluxo de Branches
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-nomenclatura-de-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.2. Nomenclatura de Branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. Commits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. Commits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-commits-atomicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1. Commits Atômicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-anatomia-do-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.2. Anatomia do Commit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.2. Anatomia do Commit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1421-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.2.1. Observações
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-exemplo-de-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.3. Exemplo de Commit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5. Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5. Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-passo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.1. Passo 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-passo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2. Passo 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-passo-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.3. Passo 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#154-nomenclatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.4. Nomenclatura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6. Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161-user-story-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1. User Story Template
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.1. User Story Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1611-titulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1.1. Título:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1612-descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1.2. Descrição:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1613-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1.3. Exemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-pull-request-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2. Pull Request Template
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.2. Pull Request Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1621-titulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.1. Título:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1622-descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.2. Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1623-revisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.3. Revisão
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1624-pre-merge-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.4. Pre-merge checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1625-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.5. Exemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7. Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guia-estilo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Estilo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codigo-conduta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de Conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dojos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Dojos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-frontend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Frontend
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Encerramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Encerramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../encerramento/post-mortem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Post Mortem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-motivacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Motivação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-politicas-de-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Políticas de Contribuição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Políticas de Contribuição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-idioma" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.1. Idioma
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-etica" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.2. Ética
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Branches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-fluxo-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.1. Fluxo de Branches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3.1. Fluxo de Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1311-exemplo-do-fluxo-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.1.1. Exemplo do Fluxo de Branches
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-nomenclatura-de-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.2. Nomenclatura de Branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. Commits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. Commits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-commits-atomicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1. Commits Atômicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-anatomia-do-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.2. Anatomia do Commit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.2. Anatomia do Commit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1421-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.2.1. Observações
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-exemplo-de-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.3. Exemplo de Commit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5. Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5. Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-passo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.1. Passo 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-passo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2. Passo 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-passo-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.3. Passo 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#154-nomenclatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.4. Nomenclatura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6. Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161-user-story-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1. User Story Template
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.1. User Story Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1611-titulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1.1. Título:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1612-descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1.2. Descrição:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1613-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.1.3. Exemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-pull-request-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2. Pull Request Template
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.2. Pull Request Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1621-titulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.1. Título:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1622-descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.2. Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1623-revisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.3. Revisão
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1624-pre-merge-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.4. Pre-merge checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1625-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.5. Exemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7. Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="1-git-flow">1. Git Flow</h1>
+<p>Este documento tem o objetivo de consolidar padrões de uso do Git no desenvolvimento de nossa aplicação.</p>
+<hr />
+<h2 id="11-motivacao">1.1. Motivação</h2>
+<p>Conforme nomeação do documento, neste projeto usaremos uma adaptação do padrão <strong>git flow</strong>. Este conceito tem seu fundamento na organização de repositórios, atribuindo políticas de uso e restrições de segurança, sempre com o objetivo de cumprir com as práticas mais adequadas, observadas e aperfeiçoadas ao longo do tempo.</p>
+<hr />
+<h2 id="12-politicas-de-contribuicao">1.2. Políticas de Contribuição</h2>
+<hr />
+<h3 id="121-idioma">1.2.1. Idioma</h3>
+<p>Por se tratar de um projeto universitário do Brasil, por padrão, usaremos o idioma nativo, <strong>Português</strong>. Porém, sabe-se que a área de engenharia de software possui muitos conteúdos e termos em outros idiomas, como o próprio <em>git flow</em>, portanto, também será aceito o uso de <strong>terminologias</strong> no idioma <strong>Inglês</strong>.</p>
+<hr />
+<h3 id="122-etica">1.2.2. Ética</h3>
+<p>O projeto espera do colaborador bom senso na escrita, além de não permitir a produção de contribuições com linguagem ofensiva. A proposta perpassa pela interação direta com a vivência e moradia de pessoas, portanto também assume-se o compromisso de não violar o respeito em qualquer aspecto, sobretudo étnico racial, religião e sexualidade.</p>
+<hr />
+<h2 id="13-branches">1.3. Branches</h2>
+<h3 id="131-fluxo-de-branches">1.3.1. Fluxo de Branches</h3>
+<p>Para garantir um fluxo de trabalho contínuo e de forma padronizada, possibilitando o rastreamento das funcionalidades desenvolvidas e facilitando o desenvolvimento contínuo. Os conceitos-chave para implementação da estratégia serão:</p>
+<ul>
+<li><code>Main</code>: Branch de <strong>produção</strong>, responsável por abrigar o código do último release.</li>
+<li><code>Qas</code>: Branch de <strong>verificação</strong>, representa uma etapa intermediária entre o processo de desenvolvimento e produção. Nesta etapa são realizados os eventuais testes e revisões que antecedem o processo de deploy.</li>
+<li><code>Dev</code>: Branch de <strong>desenvolvimento</strong>, tem a função e prioridade de ser a branch mais atualizada, a qual os desenvolvedores utilizarão como ponto de partida para desenvolver as <em>features branches</em>.</li>
+<li><code>Feature</code>: Branch de desenvolvimento de <strong>funcionalidade</strong>, representa a branch de trabalho sob uma determinada funcionalidade, tarefa, correção de bugs e afins.</li>
+<li><code>Fix</code>: Branch de <strong>correção</strong>, possibilita aos desenvolvedores corrigirem eventuais funcionalidades quebradas.</li>
+</ul>
+<h4 id="1311-exemplo-do-fluxo-de-branches">1.3.1.1. Exemplo do Fluxo de Branches</h4>
+<p>Abaixo segue a ilustração do fluxo:</p>
+<p><img alt="Figura 1: Fluxo de Branches" src="../../assets/gitflow/diagrama-gitflow.drawio.png" /><br />
+<strong>Figura 1: Fluxo de Branches</strong></p>
+<p>Autor: Calculus Team</p>
+<h3 id="132-nomenclatura-de-branch">1.3.2. Nomenclatura de Branch</h3>
+<p>É importante que a branch de <strong>funcionalidade</strong> seja criada seguindo o padrão:</p>
+<ul>
+<li><strong>(número-da-issue)-(nome-da-issue)</strong></li>
+</ul>
+<p>Ela deve ser criada a partir da branch de desenvolvimento <code>Dev</code> e deve-se trocar os espaços no nome para '-'.</p>
+<p>A branch de <strong>correção</strong> deve ser criada no padrão:</p>
+<ul>
+<li><strong>fix#(número-da-issue)/nome-da-issue</strong></li>
+</ul>
+<p>Ela deve originar-se da branch que apresentou o erro, exceto se for a branch <code>Main</code>. Em caso de exceção, deve-se criar uma branch a partir de <code>Dev</code>.</p>
+<h2 id="14-commits">1.4. Commits</h2>
+<p>As informações abaixo referem-se aos padrões de escrita de commits do nosso repositório:</p>
+<h3 id="141-commits-atomicos">1.4.1. Commits Atômicos</h3>
+<p>Sempre dividir o trabalho em <strong>pequenos e significativos commits</strong>, de maneira que cada commit implemente apenas uma funcionalidade.</p>
+<h3 id="142-anatomia-do-commit">1.4.2. Anatomia do Commit</h3>
+<p>Na estrutura do padrão convencionado, possuímos as variáveis <strong>tipo</strong>, <strong>número da issue</strong>, <strong>assunto</strong> e <strong>corpo</strong>. A anatomia do commit deve seguir o formato determinado abaixo:</p>
+<div class="highlight"><pre><span></span><code>[tipo](#número da issue): assunto 
+&gt; corpo
+</code></pre></div>
+<h4 id="1421-observacoes">1.4.2.1. Observações</h4>
+<blockquote>
+<p>As opções permitidas para o campo <code>tipo</code> são:</p>
+</blockquote>
+<ul>
+<li><code>feat</code>: nova funcionalidade</li>
+<li><code>docs</code>: relacionado à documentação</li>
+<li><code>refact</code>: refatoração de código</li>
+<li><code>test</code>: adicionar/refatorar testes</li>
+<li><code>fix</code>: correções</li>
+</ul>
+<blockquote>
+<p>As regras para o campo <code>assunto</code> são:</p>
+</blockquote>
+<ul>
+<li>Mensagem curta e sucinta</li>
+<li>Todo texto deve estar sempre em letras minúsculas</li>
+</ul>
+<blockquote>
+<p>As regras para o campo <code>corpo</code> são:</p>
+</blockquote>
+<ul>
+<li>Máximo de 100 caracteres</li>
+<li>Detalhar minimamente as novas alterações</li>
+<li>Deve conter <code>o que</code> e <code>por que</code> foi feito</li>
+</ul>
+<h3 id="143-exemplo-de-commit">1.4.3. Exemplo de Commit</h3>
+<p>Abaixo segue um exemplo de commit feito no padrão do projeto:</p>
+<div class="highlight"><pre><span></span><code>[refact](#25): ajustando página de login  
+Refatoração do método de login pois a execução estava muito lenta. 
+</code></pre></div>
+<hr />
+<h2 id="15-pull-request">1.5. Pull Request</h2>
+<h3 id="151-passo-1">1.5.1. Passo 1</h3>
+<p>Por meio do processo de <strong>pull request</strong>, realizado no GitHub, toda nova funcionalidade deve ser integrada à branch de desenvolvimento, seguindo o fluxo <code>Feature -&gt; Dev</code>.</p>
+<h3 id="152-passo-2">1.5.2. Passo 2</h3>
+<p>Uma vez que a branch de desenvolvimento esteja com todos os artefatos necessários para se fazer deploy, deve-se criar um pull request de <code>Dev -&gt; Qas</code>.</p>
+<h3 id="153-passo-3">1.5.3. Passo 3</h3>
+<p>A branch de validação (<code>Qas</code>) deve ser <strong>revisada por todos os membros antes de realizar o merge para a branch <code>Main</code></strong>. Desta forma, pode-se adicionar mais uma camada de validação pré-deploy e conferir mais assertividade nas entregas. Após concluir a validação:</p>
+<blockquote>
+<p>Dentre as atividades obrigatórias de um pull request, estão a <strong>revisão em pares</strong> da entrega e <strong>ajuste de eventuais conflitos</strong>.</p>
+<p>O colaborador que abrir o pull request <strong>não pode mergear o mesmo sem revisões de terceiros</strong>.</p>
+</blockquote>
+<p>Para publicar uma nova versão estável da aplicação na branch <code>Main</code>, é necessário realizar um <strong>Pull Request</strong> da branch <code>Qas</code> para a <code>Main</code>. Assim, é garantida a revisão da nova versão do código.</p>
+<h3 id="154-nomenclatura">1.5.4. Nomenclatura</h3>
+<p>Toda branch deve estar necessariamente relacionada a uma funcionalidade ou correção, logo a uma <em>Issue</em>. O nome da branch deve estar em PORTUGUÊS seguindo o padrão:</p>
+<ul>
+<li>Para funcionalidades: <code>feat#(número-da-issue)/descrição-curta</code></li>
+<li>Para correções: <code>fix#(número-da-issue)/descrição-curta</code></li>
+</ul>
+<p><strong>Exemplo:</strong> <code>feat#75/criar-jornada</code></p>
+<hr />
+<h2 id="16-templates">1.6. Templates</h2>
+<p>Aqui estão os templates sugeridos para o guia de contribuição, cobrindo <strong>User Stories</strong>, <strong>Pull Requests</strong> e <strong>Issues</strong>. Esses templates podem ser usados para garantir que as contribuições ao projeto <em>Calculus</em> sejam consistentes e bem documentadas.</p>
+<h3 id="161-user-story-template">1.6.1. User Story Template</h3>
+<h4 id="1611-titulo">1.6.1.1. Título:</h4>
+<div class="highlight"><pre><span></span><code>US$ - Nome da User Story
+</code></pre></div>
+<h4 id="1612-descricao">1.6.1.2. Descrição:</h4>
+<div class="highlight"><pre><span></span><code>**Contexto:**  
+Como [tipo de usuário], eu quero [ação desejada] para [objetivo/motivo].
+
+**Tarefas:**
+- [ ] Tarefa 1: Detalhe a primeira tarefa que precisa ser concluída.
+- [ ] Tarefa 2: Detalhe a segunda tarefa, se aplicável.
+- [ ] Tarefa 3: Detalhe outras tarefas necessárias.
+
+**Critérios de Aceitação:**
+- [ ] Critério 1: Detalhe o primeiro critério que deve ser atendido para que a história seja considerada completa.
+- [ ] Critério 2: Detalhe o segundo critério, se aplicável.
+- [ ] Critério 3: Detalhe qualquer outro critério necessário.
+</code></pre></div>
+<h4 id="1613-exemplo">1.6.1.3. Exemplo:</h4>
+<div class="highlight"><pre><span></span><code>**Título: US04 - Criar Jornada**  
+
+Como professor, eu quero criar uma nova jornada educacional para organizar meus conteúdos.
+
+**Tarefas:**
+- [ ] Implementar a interface de criação de jornada.
+- [ ] Conectar a interface ao backend para salvar a nova jornada.
+- [ ] Testar a funcionalidade com diferentes tipos de dados.
+
+
+**Critérios de Aceitação:**
+- [ ] O professor deve poder acessar a funcionalidade de criação de jornada a partir do dashboard.
+- [ ] O formulário de criação de jornada deve incluir campos para título, descrição e trilhas associadas.
+- [ ] A nova jornada deve ser salva no banco de dados e refletida na interface.
+</code></pre></div>
+<hr />
+<h3 id="162-pull-request-template">1.6.2. Pull Request Template</h3>
+<h4 id="1621-titulo">1.6.2.1. Título:</h4>
+<div class="highlight"><pre><span></span><code>[Tipo de mudança] Adiciona/modifica [funcionalidade/bugfix] - #[ID da user story ou issue]
+</code></pre></div>
+<h4 id="1622-descricao">1.6.2.2. Descrição</h4>
+<div class="highlight"><pre><span></span><code>Este Pull Request implementa/modifica [descrição da funcionalidade ou correção] conforme descrito na user story ou issue #[ID da user story ou issue].
+</code></pre></div>
+<h4 id="1623-revisao">1.6.2.3. Revisão</h4>
+<div class="highlight"><pre><span></span><code>- [x] Descreve a tarefa principal realizada (ex: Cria interface para a nova funcionalidade).
+- [x] Detalha outras alterações relevantes (ex: Implementa validações necessárias).
+</code></pre></div>
+<h4 id="1624-pre-merge-checklist">1.6.2.4. Pre-merge checklist</h4>
+<div class="highlight"><pre><span></span><code>- [x] O Pull Request refere-se a um único assunto, com um título claro e uma descrição em frases gramaticalmente corretas e completas.
+- [x] A branch está atualizada com a branch main.
+- [x] Os commits atendem ao padrão especificado na política de contribuição.
+</code></pre></div>
+<h4 id="1625-exemplo">1.6.2.5. Exemplo:</h4>
+<div class="highlight"><pre><span></span><code>**Título:**  
+[Feature] Adiciona funcionalidade de criação de jornada - #42
+
+**Descrição:**  
+Este Pull Request implementa a funcionalidade de criação de jornadas para professores, conforme descrito na user story #42.
+
+**Revisão:**
+- [x] Cria interface de criação de jornada.
+- [x] Implementa validações de unicidade do título.
+
+**Pre-merge checklist:**
+- [x] O Pull Request refere-se a um único assunto, um título claro e uma descrição em frases gramaticalmente corretas e completas.
+- [x] A branch está atualizada com a branch main.
+- [x] Os commits atendem o padrão especificado na política de contribuição.
+</code></pre></div>
+<hr />
+<h2 id="17-historico-de-versoes">1.7. Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;"><strong>Autore(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td style="text-align: center;">04/02/2024</td>
+<td style="text-align: center;">Criação do documento</td>
+<td style="text-align: center;">Natanael Fernandes</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td style="text-align: center;">08/07/2024</td>
+<td style="text-align: center;">Atualização de documento e diagrama</td>
+<td style="text-align: center;">Paulo Gontijo</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td style="text-align: center;">01/09/2024</td>
+<td style="text-align: center;">Adição de teamplates</td>
+<td style="text-align: center;">Paulo Gontijo</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2047 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../eap/">
+      
+      
+        <link rel="next" href="../visao-de-endpoints/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Visão de Dados - 2024.1 - CALCULUS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visao-de-dados-da-aplicacao" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="2024.1 - CALCULUS" class="md-header__button md-logo" aria-label="2024.1 - CALCULUS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            2024.1 - CALCULUS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visão de Dados
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1 - CALCULUS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="2024.1 - CALCULUS" class="md-nav__button md-logo" aria-label="2024.1 - CALCULUS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    2024.1 - CALCULUS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2024.1-CALCULUS-DOC" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1 - CALCULUS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lean Inception
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/visao_produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/faz_nao_faz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    É - Não É - Faz - Não Faz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/objetivos_produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Objetivos do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/jornada_usu%C3%A1rio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jornada
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/revisao_tecnica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Revisão Técnica, de Negócio e de UX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/sequenciador/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequenciador
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/personas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/brainstorms_funcionalidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean/canvas_mvp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canvas MVP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação Técnica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação Técnica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Abertura do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documento_arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estrutura Analítica do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Visão de Dados
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Visão de Dados
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-modelagem-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modelagem de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Modelagem de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-modelo-conceitual" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Modelo Conceitual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Modelo Conceitual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades-e-relacionamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entidades e Relacionamentos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-modelo-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Modelo Lógico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Modelo Lógico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-modelo-fisico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Modelo Físico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Modelo Físico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-arquitetura-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Arquitetura de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arquitetura de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-fluxo-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Fluxo de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-fontes-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Fontes de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-armazenamento-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Armazenamento de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3. Armazenamento de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-armazenamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura de Armazenamento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-governanca-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Governança de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Governança de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-politicas-de-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Políticas de Segurança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-qualidade-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Qualidade de Dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-revisao-bibliografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Revisão Bibliográfica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Histórico de Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-de-endpoints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão de Endpoints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_de_instru%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual de Instruções
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gestão do Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Gestão do Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/plano_comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planos/plano_qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planos/planos_custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EVM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planos/planos_riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analise de Riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/conhecimento_pareamento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadro de Conhecimento e Pareamento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/guia-contribuicao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/guia-estilo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Estilo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/codigo-conduta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de Conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dojos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Dojos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dojo/dojo-frontend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dojo Frontend
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Encerramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Encerramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../encerramento/post-mortem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Post Mortem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-modelagem-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modelagem de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Modelagem de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-modelo-conceitual" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Modelo Conceitual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Modelo Conceitual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades-e-relacionamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entidades e Relacionamentos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-modelo-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Modelo Lógico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Modelo Lógico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-modelo-fisico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Modelo Físico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Modelo Físico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-arquitetura-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Arquitetura de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arquitetura de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-fluxo-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Fluxo de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-fontes-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Fontes de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-armazenamento-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Armazenamento de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3. Armazenamento de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-armazenamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura de Armazenamento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-governanca-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Governança de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Governança de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-politicas-de-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Políticas de Segurança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-qualidade-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Qualidade de Dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-revisao-bibliografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Revisão Bibliográfica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Histórico de Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="visao-de-dados-da-aplicacao">Visão de Dados da Aplicação</h1>
+<hr />
+<h2 id="1-introducao">1. Introdução</h2>
+<p>Este documento descreve a visão geral de dados da aplicação, abordando a estrutura dos dados, os fluxos de informação, as fontes de dados, os processos de transformação e armazenamento, além dos padrões de acesso e governança. O objetivo é garantir que todos os aspectos relacionados ao gerenciamento de dados na aplicação estejam bem documentados e compreendidos por todos os stakeholders.</p>
+<hr />
+<h2 id="2-modelagem-de-dados">2. Modelagem de Dados</h2>
+<h3 id="21-modelo-conceitual">2.1. Modelo Conceitual</h3>
+<p>O modelo conceitual do <em>Calculus</em> reflete a estrutura de dados fundamental que conecta conteúdos educacionais a alunos, com base em uma hierarquia que organiza as aulas em <strong>Jornadas</strong>, <strong>Trilhas</strong>, e <strong>Conteúdos</strong>. O sistema distingue entre diferentes tipos de usuários (Alunos, Professores, e Administradores), cada um com permissões específicas. Professores são os únicos que podem criar e editar conteúdos, enquanto alunos podem se inscrever em jornadas e acessar conteúdos, mas não podem modificá-los.</p>
+<h4 id="entidades-e-relacionamentos">Entidades e Relacionamentos:</h4>
+<ul>
+<li>
+<p><strong>Usuário</strong>: Representa qualquer pessoa com uma conta na plataforma. Os usuários têm papéis específicos: <strong>Aluno</strong>, <strong>Professor</strong>, e <strong>Administrador</strong>. Professores criam e editam conteúdos, enquanto alunos consomem os conteúdos dentro das jornadas em que estão inscritos.</p>
+</li>
+<li>
+<p><strong>Jornada</strong>: O maior nível na hierarquia educacional, composto por múltiplas trilhas. Alunos podem se inscrever em jornadas.</p>
+</li>
+<li>
+<p><strong>Trilha</strong>: Um conjunto de conteúdos organizados dentro de uma jornada. Trilhas agrupam conteúdos relacionados.</p>
+</li>
+<li>
+<p><strong>Conteúdo</strong>: O nível mais granular, criado e gerido por professores, e consumido por alunos. Cada conteúdo pertence a uma trilha.</p>
+</li>
+<li>
+<p><strong>Pontos de Partida</strong>: Um startpoint (ou "ponto de partida") pode ser definido como um marco inicial no aprendizado. Sua estrutura é tal que contém jornadas que contemplam o mesmo campo de estudo. </p>
+</li>
+</ul>
+<p><center></p>
+<p><pre class="mermaid"><code>erDiagram
+    Usuario {
+        string id
+        string nome
+        string email
+        string role
+    }
+    Jornada {
+        string id
+        string titulo
+        string descricao
+    }
+    Trilha {
+        string id
+        string titulo
+        string descricao
+        string jornadaId
+    }
+    Conteudo {
+        string id
+        string titulo
+        string descricao
+        string trilhaId
+        string professorId
+    }
+    PontosDePartida {
+        string id
+        string name
+        string description
+    }
+
+    Usuario ||--o{ Jornada : "inscreve-se"
+    Jornada ||--o{ Trilha : "composta por"
+    Trilha ||--o{ Conteudo : "contém"
+    Usuario ||--o{ Conteudo : "cria/edita/visualiza"
+    Usuario ||--o{ Jornada : "cria/edita/visualiza"
+    Usuario ||--o{ Trilha : "cria/edita/visualiza"
+    PontosDePartida || --o{ Jornada : "contém"</code></pre>
+<strong>Autor:</strong> Calculus Team
+</center></p>
+<p><strong>Autor:</strong> Calculus Team</p>
+<h4 id="descricao">Descrição</h4>
+<ul>
+<li><strong>Jornada</strong> é composta por várias <strong>Trilhas</strong>, que por sua vez contêm <strong>Conteúdos</strong>.</li>
+<li><strong>Usuários</strong> desempenham diferentes funções (<strong>Aluno</strong>, <strong>Professor</strong>, <strong>Administrador</strong>), e suas interações com a plataforma são mediadas por suas permissões:</li>
+<li><strong>Alunos</strong> podem se inscrever em <strong>Jornadas</strong> e acessar todas as <strong>Trilhas</strong> dentro delas.</li>
+<li><strong>Professores</strong> criam e gerenciam <strong>Conteúdos</strong> dentro das <strong>Trilhas</strong> e <strong>Jornadas</strong> às quais estão associados.</li>
+</ul>
+<h3 id="22-modelo-logico">2.2. Modelo Lógico</h3>
+<p>O modelo lógico detalha a estrutura de dados do <em>Calculus</em>, especificando as entidades, atributos, e os relacionamentos entre elas, com um foco maior nos detalhes técnicos, como chaves primárias e estrangeiras.</p>
+<p><center></p>
+<p><pre class="mermaid"><code>classDiagram
+    class Usuario {
+        +String id PK
+        +String nome
+        +String email UNIQUE
+        +String senha
+        +String role
+    }
+
+    class Jornada {
+        +String id PK
+        +String titulo
+        +String descricao
+    }
+
+    class Trilha {
+        +String id PK
+        +String titulo
+        +String descricao
+        +String jornadaId FK
+    }
+
+    class Conteudo {
+        +String id PK
+        +String titulo
+        +String descricao
+        +String trilhaId FK
+        +String professorId FK
+    }
+    class PontosDePartida {
+        +String id PK
+        +String name
+        +String description
+    }
+
+
+    Usuario "1" --&gt; "0..*" Jornada : se inscreve
+    Jornada "1" --&gt; "0..*" Trilha : contém
+    Trilha "1" --&gt; "0..*" Conteudo : agrupa
+    Usuario "1" --&gt; "0..*" Conteudo : cria/edita/visualiza
+    Usuario "1" --&gt; "0..*" Trilha : cria/edita/visualiza
+    Usuario "1" --&gt; "0..*" Jornada : cria/edita/visualiza
+    PontosDePartida "1" --&gt; "0..*" Jornada : "contém"</code></pre>
+<strong>Autor:</strong> Calculus Team
+</center></p>
+<h4 id="descricao_1">Descrição</h4>
+<ul>
+<li><strong>Usuario.role</strong> define o tipo de usuário (Aluno, Professor, Administrador).</li>
+<li><strong>Inscricao</strong> registra a participação de um aluno em uma jornada específica.</li>
+<li><strong>Conteudo</strong> está sempre associado a um <strong>Professor</strong> (via <strong>professorId</strong>), que tem permissão para criar e editar o conteúdo.</li>
+</ul>
+<h3 id="23-modelo-fisico">2.3. Modelo Físico</h3>
+<p>O modelo físico traduz a lógica dos dados para a implementação real no banco de dados. Aplicado ao projeto do <em>Calculus</em>, a realidade é de uma modelagem não relacional, portanto trabalha-se com [Databases -&gt; Collections -&gt; Documents]. No diagrama abaixo pode-se visualizar a organização das nossas collections com o schema de um documento genérico:</p>
+<p><center></p>
+<pre class="mermaid"><code>classDiagram
+    class users {
+        +String id PK
+        +String name
+        +String email UNIQUE
+        +String username UNIQUE
+        +String password
+        +String verificationToken
+        +Boolean isVerified
+        +String role
+        +ObjectId[] points FK
+        +ObjectId[] subscribedJourneys FK
+        +ObjectId[] completedTrails FK
+        +Date createdAt
+        +Date updatedAt
+    }
+
+
+    class journeys {
+        +String id PK
+        +String title
+        +String description
+        +ObjectId point FK
+        +ObjectId[] trails FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
+    }
+
+    class trails {
+        +String id PK
+        +String name
+        +ObjectId journey FK
+        +ObjectId[] contents FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
+    }
+
+    class contents {
+        +String id PK
+        +String title
+        +String content
+        +ObjectId trail FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
+    }
+
+    class startpoints {
+        +String id PK
+        +String name
+        +String description
+        +ObjectId user FK
+        +ObjectId[] journeys FK
+        +Number order
+        +Date createdAt
+        +Date updatedAt
+    }
+
+
+    users "1" --&gt; "0..*" journeys : se inscreve
+    journeys "1" --&gt; "0..*" trails : contém
+    trails "1" --&gt; "0..*" contents : agrupa
+    users "1" --&gt; "0..*" contents : cria/edita
+    users "1" --&gt; "0..*" journeys : cria/edita
+    users "1" --&gt; "0..*" trails : cria/edita
+    startpoints "1" --&gt; "0..*"  journeys: contém
+</code></pre>
+<blockquote>
+<p>*OBS.: É importante ressaltar que cada Database refere-se a um ambiente (DEV, QAS e PRD).</p>
+</blockquote>
+<p><strong>Autor:</strong> Calculus Team
+</center></p>
+<h4 id="descricao_2">Descrição</h4>
+<ul>
+<li><strong>users</strong>: Armazena informações de login e funções dos usuários na plataforma.</li>
+<li><strong>journeys</strong>, <strong>trails</strong>, <strong>contents</strong>: Tabelas que estruturam a hierarquia de conteúdos educacionais.</li>
+</ul>
+<hr />
+<h2 id="3-arquitetura-de-dados">3. Arquitetura de Dados</h2>
+<p>A arquitetura de dados do projeto <em>Calculus</em> foi projetada para assegurar que a coleta, processamento e armazenamento de informações ocorram de maneira eficiente e segura. A aplicação gera dados a partir das interações dos usuários, que são processados por serviços dedicados e armazenados em collections específicas no MongoDB Atlas. Cada serviço possui suas próprias collections que estruturam os dados de maneira organizada.</p>
+<h3 id="31-fluxo-de-dados">3.1. Fluxo de Dados</h3>
+<p>No <em>Calculus</em>, os dados são gerados a partir das interações dos usuários no frontend, que envia requisições para serviços no backend. Esses serviços processam os dados e interagem com collections específicas no MongoDB para armazenamento e recuperação.</p>
+<p>Descrição do Fluxo:</p>
+<ol>
+<li><strong>Interação do Usuário</strong>: Usuários (alunos, professores, ou administradores) interagem com a interface da aplicação, realizando ações como autenticação, criação de conteúdos, inscrição em jornadas, etc.</li>
+<li><strong>Envio de Requisições</strong>: Essas interações resultam em requisições que são enviadas para serviços específicos:</li>
+<li><strong>UserService</strong>: Gestão e autenticação de usuários, lidando com a criação e verificação de tokens de autenticação, além de gerenciar dados do usuário.</li>
+<li><strong>StudioMakerService</strong>: Criação, edição e gestão de conteúdos educacionais, incluindo a estruturação de jornadas, trilhas e conteúdos.</li>
+<li><strong>Processamento e Armazenamento</strong>: Os dados processados são então armazenados em collections dedicadas dentro do MongoDB Atlas, conforme o serviço correspondente.</li>
+</ol>
+<p>Abaixo segue um diagrama que representa visualmente o conceito abordado acima:</p>
+<p><center></p>
+<p><pre class="mermaid"><code>flowchart TD
+    UserFrontend[User Frontend] --&gt; UserService
+    UserFrontend --&gt; StudioMakerService
+
+    UserService --&gt; UsersDB[(users)]
+    UserService --&gt; RefreshTokensDB[(refreshtokens)]
+    UserService --&gt; ResetTokensDB[(resettokens)]
+
+    StudioMakerService --&gt; ContentsDB[(contents)]
+    StudioMakerService --&gt; JourneysDB[(journeys)]
+    StudioMakerService --&gt; TrailsDB[(trails)]
+    StudioMakerService --&gt; StartpointsDB[(startpoints)]</code></pre>
+<strong>Autor:</strong> Calculus Team</p>
+<p></center></p>
+<ul>
+<li>
+<p><strong>UserService</strong> interage com as collections <strong>users</strong>, <strong>refreshtokens</strong>, e <strong>resettokens</strong>:</p>
+<ul>
+<li><strong>users</strong>: Armazena informações de usuários, como credenciais e perfis.</li>
+<li><strong>refreshtokens</strong>: Gera e armazena tokens usados para manter a sessão do usuário.</li>
+<li><strong>resettokens</strong>: Armazena tokens temporários para redefinição de senhas.</li>
+</ul>
+</li>
+<li>
+<p><strong>StudioMakerService</strong> interage com as collections <strong>contents</strong>, <strong>journeys</strong>, <strong>trails</strong>, e <strong>startpoints</strong>:</p>
+<ul>
+<li><strong>contents</strong>: Armazena os materiais educacionais criados pelos professores.</li>
+<li><strong>journeys</strong>: Armazena informações sobre jornadas, que agrupam trilhas educacionais.</li>
+<li><strong>trails</strong>: Armazena trilhas, que são compostas por conteúdos.</li>
+<li><strong>startpoints</strong>: Registra pontos de partida ou progresso em trilhas e jornadas.</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-fontes-de-dados">3.2. Fontes de Dados</h3>
+<p>As principais fontes de dados no <em>Calculus</em> são as interações dos usuários, que geram informações processadas e armazenadas nas collections do MongoDB. A aplicação não depende de fontes externas; todos os dados são gerados e manipulados internamente pelos serviços.</p>
+<ul>
+<li><strong>UserService</strong>: Gerencia dados relacionados a usuários, incluindo autenticação, roles (permissões de aluno, professor, administrador) e gerenciamento de tokens.</li>
+<li><strong>StudioMakerService</strong>: Gerencia a criação e edição de conteúdos educacionais e a estruturação de jornadas e trilhas.</li>
+</ul>
+<p>Cada serviço possui suas próprias collections no MongoDB, organizando os dados de forma eficiente e segura.</p>
+<h3 id="33-armazenamento-de-dados">3.3. Armazenamento de Dados</h3>
+<p>O armazenamento dos dados no <em>Calculus</em> é realizado por meio de collections específicas em instâncias de MongoDB Atlas. Cada serviço possui suas próprias collections dedicadas para manter os dados organizados e seguros.</p>
+<h4 id="estrutura-de-armazenamento">Estrutura de Armazenamento:</h4>
+<ul>
+<li>
+<p><strong>UserService</strong>: Armazena dados relacionados a usuários e autenticação.</p>
+<ul>
+<li><strong>users</strong>: Dados do usuário, como credenciais e roles.</li>
+<li><strong>refreshtokens</strong>: Tokens de sessão do usuário.</li>
+<li><strong>resettokens</strong>: Tokens para redefinição de senhas.</li>
+</ul>
+</li>
+<li>
+<p><strong>StudioMakerService</strong>: Armazena dados relacionados a conteúdos educacionais.</p>
+<ul>
+<li><strong>contents</strong>: Materiais educacionais criados pelos professores.</li>
+<li><strong>journeys</strong>: Estrutura de jornadas que agrupam trilhas.</li>
+<li><strong>trails</strong>: Conjunto de trilhas associadas às jornadas.</li>
+<li><strong>startpoints</strong>: Marca o progresso ou o início em trilhas e jornadas.</li>
+</ul>
+</li>
+</ul>
+<p>Abaixo segue um diagrama que resume o conceito apresentado visualmente:</p>
+<p><center></p>
+<p><pre class="mermaid"><code>flowchart TD
+    subgraph MongoDB Atlas
+        D[(users)] --&gt; B[UserService]
+        E[(refreshtokens)] --&gt; B
+        F[(resettokens)] --&gt; B
+
+        H[(journeys)] --&gt; C[StudioMakerService]
+        I[(trails)] --&gt; C
+        J[(startpoints)] --&gt; C
+    end
+
+    B -.-&gt;|Leitura e Escrita| D
+    B -.-&gt;|Leitura e Escrita| E
+    B -.-&gt;|Leitura e Escrita| F
+
+    C -.-&gt;|Leitura e Escrita| H
+    C -.-&gt;|Leitura e Escrita| I
+    C -.-&gt;|Leitura e Escrita| J</code></pre>
+<strong>Autor:</strong> Calculus Team</p>
+<p></center></p>
+<ul>
+<li>Cada serviço (UserService, StudioMakerService) está conectado às suas respectivas collections no MongoDB Atlas.</li>
+</ul>
+<p>Considerações de Armazenamento:</p>
+<ul>
+<li><strong>Isolamento</strong>: Cada serviço tem suas próprias collections para evitar interferências e facilitar a manutenção.</li>
+<li><strong>Escalabilidade</strong>: MongoDB Atlas permite o crescimento dos bancos de dados conforme a demanda da aplicação aumenta.</li>
+<li><strong>Segurança</strong>: As interações com o MongoDB Atlas são realizadas de forma segura, requisitando autenticação válida para cada tipo de ação, garantindo que os dados estejam protegidos contra acessos não </li>
+</ul>
+<hr />
+<h2 id="4-governanca-de-dados">4. Governança de Dados</h2>
+<p>A governança de dados no <em>Calculus</em> é fundamental para garantir que todas as informações gerenciadas pela aplicação sejam tratadas de forma segura, precisa e conforme as regulamentações aplicáveis. A seção a seguir detalha as práticas de segurança, qualidade de dados, e conformidade implementadas no sistema.</p>
+<h3 id="41-politicas-de-seguranca">4.1. Políticas de Segurança</h3>
+<p>As políticas de segurança do <em>Calculus</em> são desenhadas para proteger os dados contra acessos não autorizados, garantir a integridade das informações e assegurar a disponibilidade dos dados para os usuários legítimos.</p>
+<ul>
+<li><strong>Autenticação e Autorização</strong>: Todos os acessos à aplicação são controlados por um sistema robusto de autenticação e autorização. Os usuários devem se autenticar via credenciais seguras, e os tokens de sessão são gerenciados através das collections <strong>refreshtokens</strong> e <strong>resettokens</strong> no MongoDB.</li>
+<li><strong>Criptografia</strong>: Dados sensíveis, como senhas de usuário e tokens de autenticação, são criptografados  em repouso (armazenamento).</li>
+<li><strong>Backup e Recuperação</strong>: Rotinas de backup são implementadas para garantir que os dados possam ser recuperados em caso de falha. O MongoDB Atlas oferece recursos avançados de backup e recuperação de desastres.</li>
+</ul>
+<p><center></p>
+<p><pre class="mermaid"><code>flowchart TD
+    A[Entrada de Dados] --&gt; B[Autenticacao e Autorizacao]
+    B --&gt; C[Criptografia]
+    C --&gt; D[Monitoramento de Acessos]
+    D --&gt; E[Armazenamento Seguro]</code></pre>
+<strong>Autor:</strong> Calculus Team
+</center></p>
+<h3 id="42-qualidade-de-dados">4.2. Qualidade de Dados</h3>
+<p>A qualidade dos dados é essencial para garantir que as informações usadas pelos alunos e professores sejam precisas, completas e consistentes. O <em>Calculus</em> adota várias práticas para manter altos padrões de qualidade de dados.</p>
+<ul>
+<li><strong>Validação</strong>: Todos os dados inseridos pelos usuários ou processados pelos serviços são validados para garantir que estejam no formato correto e dentro dos limites esperados. Por exemplo, os dados de <strong>users</strong>, <strong>contents</strong>, e <strong>journeys</strong> passam por validações de integridade antes de serem armazenados.</li>
+<li><strong>Consistência</strong>: Garantir a consistência dos dados entre as diferentes collections é fundamental. Relacionamentos entre <strong>journeys</strong>, <strong>trails</strong>, e <strong>contents</strong> são verificados para assegurar que as referências cruzadas sejam válidas.</li>
+</ul>
+<p><center></p>
+<p><pre class="mermaid"><code>flowchart TD
+    A[Entrada de Dados] --&gt; B[Validação de Dados]
+    B --&gt; C[Transformação de Dados]
+    C --&gt; E[Armazenamento]</code></pre>
+<strong>Autor:</strong> Calculus Team
+</center></p>
+<h2 id="5-revisao-bibliografica">5. Revisão Bibliográfica</h2>
+<blockquote>
+<p>Inmon, W. H., Strauss, D., &amp; Neushloss, G. (2010). <em>DW 2.0: The Architecture for the Next Generation of Data Warehousing</em>. Morgan Kaufmann.</p>
+<p>ISO/IEC 27001 (2013). <em>Information technology — Security techniques — Information security management systems — Requirements</em>.</p>
+</blockquote>
+<h2 id="6-historico-de-versao">6. Histórico de Versão</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01/09/2024</td>
+<td>1.0</td>
+<td>Criação do documento</td>
+<td>Paulo Gontijo</td>
+</tr>
+<tr>
+<td>05/09/2024</td>
+<td>1.1</td>
+<td>Ajustes de texto e diagramas</td>
+<td>Paulo Gontijo, João Bisinotti</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
