@@ -87,6 +87,13 @@ Todas as funcionalidades planejadas foram entregues e validadas pelo Product Own
 3. **Incluir um Especialista em UX/UI:**  
    A adição de um membro focado exclusivamente em UX/UI traria uma experiência de usuário mais refinada e ajudaria a tornar a plataforma mais atraente visualmente.
 
+4.  **US06 - Gerenciar Jornada e US11 - Gerenciar Pontos de Partida**
+   Ambas histórias de usuário, em sua interface, existe um espaço que foi designado para se colocar imagens. Hoje, na entrega do projeto, este campo está com uma imagem genérica, não permitindo a mudança pela usuário. Uma oportunidade de melhoria seria adicionar uma funcionalidade para que o usuário possa adicionar qualquer imagem às jornadas e aos pontos de partida.
+
+5. **Troca de protocólo de comunicação**
+   A aplicação está sendo entregue com seu deployment feito a partir de uma máquina virtual, hospedada no Microsoft Azure. Dito isso, foi feita uma abertura de rede e exposição dessa máquina na internet, para que usuários externos possam interagir com a aplicação. Esta abertura de portas e rotas para intenet foi executada de tal forma que só é possível se comunicar com a aplicação por meio do protocólo HTTP. Isso abre espaço para adição de um certificado SSL/TLS, o que permitirá comunicação segura com a porta 443 (padrão TCP/IP) e consequentemente o uso do protocólo HTTPS.
+   
+
 ---
 
 ## 7. Conclusão
