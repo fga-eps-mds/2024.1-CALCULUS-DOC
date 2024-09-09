@@ -1,113 +1,136 @@
 # Plano de Qualidade
-
 ## 1. Introdução
 
-Um dos fundamentos essenciais de um produto reside na qualidade que ele oferece. Nesse contexto, a ISO 9126 define a qualidade como a "totalidade de características e critérios de um produto ou serviço que emprega suas capacidades para satisfazer as necessidades declaradas ou implícitas".
+A qualidade de um produto de software é um dos seus pilares essenciais, garantindo que ele atenda às necessidades dos usuários e ofereça valor real. Segundo a ISO 25010, que substituiu a ISO 9126 em 2011, a qualidade de um software é definida como o grau em que um sistema atende às necessidades expressas e não expressas dos stakeholders, resultando na criação de valor.
 
-Por sua vez, a ISO 25010, lançada em 2011 como uma substituição da ISO 9126, estabelece padrões para a qualidade de produtos de software. Essa norma define qualidade como o grau em que um sistema atende às necessidades expressas e não expressas dos stakeholders, resultando na criação de valor.
+A ISO 25010 identifica oito características fundamentais para a qualidade de um produto: adequação funcional, eficiência de desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade.
 
-A ISO 25010 identifica oito características fundamentais para a qualidade de um produto, que são: adequação funcional, eficiência de desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade.
+Este documento visa detalhar as ferramentas, métricas e procedimentos que serão utilizados para assegurar a qualidade do produto, com foco na testabilidade e na aderência ao modelo de qualidade Q-Rapids.
 
 ## 2. Objetivo
 
-A elaboração deste plano tem como propósito detalhar as ferramentas a serem empregadas e as métricas a serem analisadas pela equipe, visando estabelecer os padrões de qualidade do produto e embasar as decisões a serem tomadas. Com isso, podemos citar os seguintes objetivos específicos deste documento:
+Este plano tem como propósito estabelecer as diretrizes de qualidade do projeto, assegurando que todas as etapas do desenvolvimento sejam conduzidas de maneira a garantir um produto final de alta qualidade. Especificamente, os objetivos deste documento são:
 
 - Definir os objetivos de qualidade;
-- Apresentar formas de atingir os objetivos de qualidade;
+- Estabelecer métodos para alcançar os objetivos de qualidade;
 - Selecionar e coletar métricas de qualidade;
 - Apresentar a compreensão e a aplicação das métricas para o produto;
-- Especificar os procedimentos, técnicas e ferramentas que serão utilizados para a garantia da qualidade do produto.
+- Especificar os procedimentos, técnicas e ferramentas que serão utilizados para a garantia da qualidade do produto;
+- Incluir práticas de testabilidade para assegurar que o código seja facilmente testável, promovendo a manutenção da qualidade ao longo do tempo.
 
 ## 3. Objetivos de Qualidade
 
-No âmbito dos objetivos delineados pela norma ISO 25010:2011, a análise da qualidade do projeto é direcionada a três áreas fundamentais: qualidade interna, qualidade externa e qualidade de uso.
+Com base na norma ISO 25010:2011, o plano de qualidade do projeto foca em três áreas principais: qualidade interna, qualidade externa e qualidade de uso.
 
-A avaliação da qualidade interna e externa visa examinar o próprio produto e está centrada em seis características primordiais: funcionalidade, confiabilidade, usabilidade, eficiência, manutenibilidade e portabilidade. Cada uma dessas características engloba diversas subcaracterísticas, as quais se tornam observáveis externamente durante a utilização do software e são influenciadas pelos atributos internos do produto.
+- **Qualidade Interna e Externa:** Estas são avaliadas através de características como funcionalidade, confiabilidade, usabilidade, eficiência, manutenibilidade e portabilidade. A qualidade interna se refere aos atributos que são observados durante o processo de desenvolvimento, enquanto a qualidade externa é avaliada quando o produto está em uso.
+  
+- **Qualidade de Uso:** Concentra-se em quatro características principais: eficácia, produtividade, segurança e satisfação. Essas características avaliam a experiência do usuário final, garantindo que o software atenda às suas expectativas.
 
-A qualidade de uso, por outro lado, concentra-se em quatro características principais: eficácia, produtividade, segurança e satisfação. Essas características derivam da combinação das seis características de qualidade (interna e externa) previamente definidas pela norma ISO.
-
-Durante a análise da qualidade do projeto, são abordados tanto os aspectos internos quanto os externos do software, considerando as seis características de qualidade. Além disso, é avaliada a experiência do usuário final por meio das quatro características específicas de qualidade de uso. Ao adotar essas abordagens complementares, busca-se realizar uma avaliação abrangente da qualidade do produto sob diferentes perspectivas.
+Além dessas áreas, a **testabilidade** é considerada um fator crítico para garantir que o produto seja fácil de testar, o que, por sua vez, contribui para a manutenção da qualidade ao longo do ciclo de vida do software.
 
 ## 4. Verificação e Validação (V&V)
 
-A verificação e validação são processos essenciais no desenvolvimento de produtos, sistemas ou softwares, desempenhando papéis cruciais na garantia de qualidade e na conformidade com requisitos específicos.
+### 4.1. Verificação
 
-### Verificação
+A verificação é o processo sistemático de avaliação de um sistema ou componente para determinar se os resultados de uma fase de desenvolvimento atendem aos requisitos estabelecidos para essa fase. Esta abordagem visa garantir que o software esteja sendo construído corretamente, em conformidade com as especificações.
 
-A verificação refere-se à avaliação sistemática de um sistema ou componente para determinar se os resultados esperados estão em conformidade com os requisitos predeterminados. Deste modo, é o processo de checar se o produto está sendo construído corretamente, garantindo que cada etapa do desenvolvimento atenda às especificações e normas estabelecidas.
+### 4.2. Validação
 
-### Validação
+A validação assegura que o sistema atende às necessidades e expectativas dos usuários finais, garantindo que o produto certo está sendo construído. A validação será realizada de forma contínua ao longo do desenvolvimento, com validações regulares realizadas com os Product Owners.
 
-A validação está relacionada à confirmação de que o sistema atende às necessidades e expectativas do usuário final. É o processo de assegurar que o produto seja útil e eficaz para o propósito a que se destina. Assim, a validação garante que o produto construído é o produto certo, atendendo aos requisitos e proporcionando valor real aos usuários.
+### 4.3. Técnicas de V&V
 
-Para alcançar os objetivos de qualidade propostos para o projeto, serão adotadas três técnicas de verificação e validação:
+Para alcançar os objetivos de qualidade, serão adotadas as seguintes técnicas:
 
-- **Análise estática do código:** Serão utilizadas as funcionalidades do Sonar Cloud como ferramenta de análise estática de código, visando a obtenção de métricas mensuráveis. Essa ferramenta será capaz de identificar possíveis problemas no código e oferecer informações pertinentes à gestão da qualidade do projeto, promovendo uma contribuição valiosa para a tomada de decisões e a identificação de áreas a serem abordadas pela equipe.
+- **Análise Estática do Código:** Utilização do SonarCloud para analisar o código e coletar métricas relacionadas a code smells, duplicações, complexidade e cobertura de testes. A análise estática é fundamental para identificar problemas de qualidade no código que possam comprometer a manutenibilidade e a testabilidade do software.
 
-- **Testes automatizados:** Serão empregados testes automatizados, abrangendo tanto os testes unitários quanto os de integração. Essa abordagem possibilita a validação não apenas dos cenários esperados, mas também das situações de erro, assegurando o correto funcionamento do software em diversas condições.
+- **Testes Automatizados:** Implementação de testes unitários e de integração automatizados para garantir que cada componente funcione conforme o esperado e que a integração entre os componentes seja robusta. A cobertura de código será monitorada para assegurar que as áreas críticas do software estão devidamente testadas.
 
-- **Validação com os POs:** Reuniões semanais serão realizadas para validar o progresso e obter feedback. Desta forma, é possível realizar a validação contínua da implementação.
+- **Validação com POs:** Reuniões semanais serão realizadas com os Product Owners para validar o progresso e obter feedback. Este processo contínuo de validação ajuda a garantir que o desenvolvimento esteja alinhado com as expectativas dos stakeholders e com os objetivos de qualidade.
 
 ## 5. Padrões e Métricas
 
 As principais normas e modelos utilizados no projeto são:
 
-- NBR - ISO/IEC 25010
-- Modelo de Qualidade Q-Rapids
+- **NBR - ISO/IEC 25010:** Padrão internacional para a qualidade de produtos de software.
+- **Modelo de Qualidade Q-Rapids:** Um modelo baseado em métricas de qualidade que permite a avaliação contínua e orientada por dados do software.
 
-### Métricas
+### 5.1. Métricas
 
-As métricas definidas para o monitoramento de qualidade foram:
+As métricas definidas para monitorar a qualidade do projeto, conforme o modelo Q-Rapids e alinhadas com a testabilidade e qualidade de produto, incluem:
 
-| Métrica         | Descrição                                           |
-|-----------------|-----------------------------------------------------|
-| Reliability     | Quantidade de bugs presentes no código fonte        |
-| Security Rating | Avaliação de segurança de falhas e vulnerabilidades |
-| Maintainability | Quantidade de code smells                           |
-| Coverage        | Porcentagem de linhas de código cobertas por testes |
-| Duplications    | Densidade em porcentagem de código duplicado        |
-| Size            | Quantidade de linhas de declarações, funções, classes, arquivos e comentários |
-| Complexity      | Quantidade de complexidade ciclomática e cognitiva  |
-| Issues          | Quantidade de issues abertas, fechadas, reabertas, falsa positiva e "won't fix" |
+| Métrica         | Descrição                                                                                       |
+|-----------------|-------------------------------------------------------------------------------------------------|
+| **Reliability** | Quantidade de bugs presentes no código fonte.                                                   |
+| **Security Rating** | Avaliação de segurança de falhas e vulnerabilidades, conforme as diretrizes de segurança do projeto.|
+| **Maintainability** | Quantidade de code smells identificados no código, que podem impactar a manutenibilidade e testabilidade.|
+| **Coverage**    | Porcentagem de linhas de código cobertas por testes automatizados, com um valor de referência mínimo de 80%.|
+| **Duplications** | Densidade de código duplicado em porcentagem, que deve ser mantida abaixo de 5% para facilitar a manutenção.|
+| **Size**        | Quantidade de linhas de declarações, funções, classes, arquivos e comentários, usada para avaliar a complexidade geral.|
+| **Complexity**  | Medição da complexidade ciclomática e cognitiva, com foco em manter a complexidade baixa para melhorar a testabilidade.|
+| **Issues**      | Quantidade de issues abertas, fechadas, reabertas, falsa positiva e "won't fix", usada para monitorar a saúde do projeto.|
+
+### 5.2. Valores de Referência
+
+Para cada métrica, foram definidos valores de referência que servirão como indicadores de qualidade e auxiliarão na tomada de decisões:
+
+- **Coverage:** 80% de cobertura mínima das linhas de código.
+- **Duplications:** Menos de 0% de duplicação de código.
+- **Complexity:** Manter a complexidade ciclomática abaixo de 10 por método/função.
+
+Esses valores de referência são críticos para garantir que o software permaneça testável e de alta qualidade ao longo de seu ciclo de vida.
 
 ## 6. Testes
 
-O software é um produto da criatividade humana que envolve alta complexidade e, por isso, pode apresentar falhas e inconsistências. Para garantir que o software funcione conforme o esperado, existem os testes, que são processos que verificam a qualidade do software e evitam que os erros afetem o usuário final.
+Os testes desempenham um papel crucial na garantia da qualidade do software. Eles verificam se o software funciona conforme o esperado e ajudam a evitar que erros afetem o usuário final.
 
-Os testes podem ser classificados em diferentes tipos, de acordo com o nível de abstração do software:
+### 6.1. Tipos de Testes
 
-- **Testes de unidade:** São testes que verificam uma parte isolada do código, geralmente uma classe ou um método.
-- **Testes de integração:** São testes que verificam o funcionamento de uma funcionalidade ou uma transação completa, envolvendo a interação entre diferentes componentes do software.
-- **Testes de sistema:** São testes que simulam o uso real do software por um usuário, verificando se o software atende aos requisitos e expectativas.
+- **Testes de Unidade:** Verificam a funcionalidade de componentes isolados do sistema, como métodos ou classes, garantindo que cada parte funcione de forma independente.
+- **Testes de Integração:** Avaliam a interação entre diferentes componentes do sistema, assegurando que eles funcionem bem em conjunto.
+- **Testes de Sistema:** Simulam o uso real do software para verificar se ele atende aos requisitos e expectativas do usuário final.
+
+### 6.2. Implementação de Testes
+
+Os testes serão implementados de forma a maximizar a cobertura de código e garantir que todas as funcionalidades críticas sejam validadas. O foco na **testabilidade** garante que o código seja estruturado de maneira a facilitar a criação e execução de testes, permitindo detecção precoce de defeitos.
 
 ## 7. Ferramentas
 
-- **Jest:** Framework de testes para JavaScript.
-- **ESLint:** Ferramenta para identificar e reportar padrões encontrados no código ECMAScript/JavaScript, com o objetivo de tornar o código mais consistente e evitar bugs.
-- **SonarCloud:** Ferramenta de análise de código que verifica a qualidade do código conforme as métricas e regras estabelecidas.
+As ferramentas a serem utilizadas para suportar as práticas de qualidade incluem:
+
+- **Jest:** Framework de testes para JavaScript, utilizado principalmente para testes de unidade.
+- **ESLint:** Ferramenta para identificar e reportar padrões inconsistentes no código ECMAScript/JavaScript, contribuindo para a qualidade e manutenibilidade do código.
+- **SonarCloud:** Plataforma de análise de código que verifica a qualidade do código conforme as métricas e regras estabelecidas, incluindo cobertura de testes, duplicação, complexidade, entre outros.
 
 ## 8. Controle de Código
 
-Para garantir a qualidade dos procedimentos, utilizamos uma combinação de tarefas automáticas e manuais. As tarefas automáticas envolvem documentação, controle de versão, código, commits e testes, que são realizados por ferramentas e sistemas que contribuem para a qualidade do software. Essas tarefas serão realizadas com o auxílio de ferramentas e sistemas, garantindo a qualidade do software.
+Para garantir a qualidade dos procedimentos, o controle de código será realizado por meio de tarefas automáticas e manuais, envolvendo:
 
----
+- **Documentação e Controle de Versão:** Uso de sistemas de controle de versão para gerenciar o histórico de mudanças no código, facilitando o rastreamento de alterações e a colaboração entre membros da equipe.
+- **Commits e Pull Requests:** Revisões de código serão realizadas por meio de pull requests, garantindo que todas as mudanças passem por uma análise rigorosa antes de serem integradas ao código base.
+- **Testes Automatizados:** Execução de testes automatizados para cada commit, assegurando que novas alterações não introduzam regressões.
 
-Esse plano de qualidade fornece uma visão abrangente das metas, métodos e ferramentas necessários para assegurar a qualidade do produto de software. A adesão a essas diretrizes garantirá que o software atenda aos padrões exigidos e satisfaça as necessidades dos usuários finais.
 
 ## 9. Referências
 
+> Quality-aware Rapid Software Development Project: The Q-Rapids Project. FRANCH X.; LOPEZ L.; FERNÁNDEZ S. M.; ORIOL M.; RODRÍGUEZ P.; TRENDOWICZ A.
 
->  Quality-aware Rapid Software Development Project: The Q-Rapids Project. FRANCH X.; LOPEZ L.; FERNÁNDEZ S. M.; ORIOL M.; RODRÍGUEZ P.; TRENDOWICZ A.
+> ISO/IEC 25010. ISO 25000. Software and data quality. 2011. Disponível em: https://iso25000.com/index.php
 
->  ISO/IEC 25010. ISO 25000. Software and data quality. 2011. Disponível em: https://iso25000.com/index.php/en/iso-25000-standards/iso-25010. 
+> Quality-aware Rapid Software Development Project: The Q-Rapids Project. FRANCH X.; LOPEZ L.; FERNÁNDEZ S. M.; ORIOL M.; RODRÍGUEZ P.; TRENDOWICZ A.
 
->  Metric Definitions. SonarQube. Disponível em: https://docs.sonarqube.org/latest/user-guide/metric-definitions/
+> ISO/IEC 25010. ISO 25000. Software and data quality. 2011. Disponível em: https://iso25000.com/index.php/en/iso-25000-standards/iso-25010.
 
->  A Quality Model for Actionable Analytics in Rapid Software Development. FERNÁNDEZ S. M.; JEDLITSCHKA A.; GUZMÁN L.; VOLLMER A. M. Kaiserslautern, Alemanha.
+> Metric Definitions. SonarQube. Disponível em: https://docs.sonarqube.org/latest/user-guide/metric-definitions/
 
+> A Quality Model for Actionable Analytics in Rapid Software Development. FERNÁNDEZ S. M.; JEDLITSCHKA A.; GUZMÁN L.; VOLLMER A. M. Kaiserslautern, Alemanha.
 
-## 4. Histórico de versão
+---
 
-|**Data**|**Descrição**|**Autor(es)**|
-|--------|-------------|--------------|
-|03/07/2024| Criação do Documento | Davi Matheus |
+## 10. Histórico de Versão
+
+| **Data**   | **Versão** | **Descrição**                                                           | **Autor(es)**     |
+|------------|------------|-------------------------------------------------------------------------|-------------------|
+| 03/07/2024 | 1.0        | Criação do documento                                                    | Davi Matheus      |
+| 01/09/2024 | 1.1        | Revisão e aperfeiçoamento com foco em testabilidade e qualidade         | Paulo Gontijo      |
+| 05/09/2024 | 1.2        | Ajuste das métricas         | Paulo Gontijo      |
