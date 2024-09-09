@@ -49,6 +49,7 @@ nav:
     - Estrutura Analítica do Projeto: 'organizacoes/eap.md'
     - Visão de Dados: 'organizacoes/visao-de-dados.md'
     - Visão de Endpoints: 'organizacoes/visao-de-endpoints.md'
+    - Manual de Instruções: 'organizacoes/manual_de_instruções.md'
   - Gestão do Projeto: 
     - Plano de Comunicação: 'planejamento/plano_comunicacao.md'
     - Plano de Qualidade: 'planos/plano_qualidade.md'
